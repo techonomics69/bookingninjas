@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="initial-scale=1"/>
+	<title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+	<!--Favicon-->
+		<link rel="icon" type="image/png" href="favicon.ico">
+	<!--End Favicon-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/intlTelInput.css"> <!-- <Telephone Input CSS -->
+	<link href="css/screen.css" rel="stylesheet" media="screen"> 
+	<!--endbuild-->
+</head>
+
+<body class="no-header"> 
+
+<div class="wrapper">
+	<!--main-->
+	<div class="main">
+		<div class="pricing-hero checkout-hero">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-12 col-lg-5 order-lg-1">
+						<img src="img/checkout-hero.png" alt="Booking Ninjas PMS Implementation">
+					</div>
+					<div class="col-12 col-lg-7">
+						<h1>
+							KickStart Your Booking Ninjas  <span class="color-blue">PMS Implementation</span>
+						</h1>
+						<p>Enjoy the convenience of a modern PMS while 
+							creating a smooth execution of your business’s 
+							operations. A seamless process to yield 
+							maximum results. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="checkout-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="checkout-process">
+							<h2 class="checkout-process__title">The Payment Process</h2>
+							<p>Make Booking Ninjas your new PMS with 3 easy steps:</p>
+							<ul>
+								<li class="wow fadeIn">
+									<b>Step ONE:</b>
+									<br/>
+									Sign up for an account and pay a 
+									<!-- dynamic value -->  <big>XX%</big> <!-- /dynamic value -->
+									deposit of the implementation fee to start your journey.
+									
+								</li>
+								<li class="wow fadeIn">
+									<b>Step TWO:</b>
+									<br/>
+									Once the initial deposit is received, our implementation team will contact you within 24hrs to discuss the implementation process.
+								</li>
+								<li class="wow fadeIn">
+									<b>Step THREE:</b>
+									<br/>
+									Once the implementation is done and you are satisfied, pay the balance of 
+									<!-- dynamic value (price of the plan) --> <big>$XXXX</big> <!-- /dynamic value --> 
+									and start your Subscription fee of 
+									<!-- dynamic value (price of the plan) --> <big>$XXX</big> <!-- /dynamic value -->
+								</li>
+							</ul>
+						</div>
+						<div class="checkout-process">
+							<h2 class="checkout-process__title">The Implementation Process</h2>
+							<ul>
+								<li class="wow fadeIn">
+									<b>Stage ONE:</b>
+									<br/>
+									Discovery discussion to determine system & data requirements.
+								</li>
+								<li class="wow fadeIn">
+									<b>Stage TWO:</b>
+									<br/>
+									Preparation of system based on finalized specification during the discovery call.
+								</li>
+								<li class="wow fadeIn">
+									<b>Stage THREE:</b>
+									<br/>
+									Testing and optimization to ensure the system fits into your business logic.
+								</li>
+								<li class="wow fadeIn">
+									<b>Stage FOUR:</b>
+									<br/>
+									Key users will be trained on the new capabilities and further polishing of any procedures with their feedback taken into consideration.
+								</li>
+								<li class="wow fadeIn">
+									<b>Stage FIVE: </b>
+									System will go live.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- checkout form -->
+					<div class="col-12 col-lg-5">
+						<form class="checkout-form">
+							<!-- First step -->
+							<div class="checkout-form__first-step steps">
+								<div class="checkout-form-header text_center">
+									<p>Start Implementation 
+									<br/>
+									With Just <span class="color-blue">
+										<!-- dynamic value -->XX%<!-- dynamic value -->
+										 Deposit</span></p>
+								</div>
+								<div class="checkout-form-body">
+									<div class="checkout-form__item">
+										<label><span class="label">First name</span>
+											<input type="text" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Last name</span>
+											<input type="text" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Company Name</span>
+											<input type="text" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Work Email</span>
+											<input type="email" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Phone Number</span>
+											<!-- We used the same phone input on the trial page - https://www.bookingninjas.com/14-day-free-trial -->
+											<!-- "International Telephone Input" - https://github.com/jackocnr/intl-tel-input -->
+											<input type="text" id="trial-phone" maxlength="14" class="phone-field" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Plan</span>
+											<select> <!-- dynamic value - seleted plan -->
+												<option value="">Extra Small ($500 Implementation Fee)</option>
+												<option value="">Small ($2 000 Implementation Fee)</option>
+												<option value="" selected>Medium ($4 000 Implementation Fee)</option> 
+												<option value="">Large ($8 000 Implementation Fee)</option>
+												<option value="">Enterprise ($15 000 Implementation Fee)</option>
+											</select>
+										</label>
+									</div>
+									<!-- <p>30% of Implementation Fee Deposit</p>
+									<p class="checkout-form__amount">
+										$2,400 
+									</p> -->
+									<div class="checkout-form__checkbox">
+										<label>
+											<input type="checkbox" required/>
+											<p>I agree to the <a href="/terms-and-conditions"> Terms </a> & <a href="/privacy-policy"> Privacy Policy </a></p> 
+										</label>
+									</div>
+								</div>
+								<div class="checkout-form-footer text_center">
+									<a class="button-orange proceed-payment">Proceed to Payment</a>
+									<div class="checkout-form__bar">
+										<div class="bar"></div>
+									</div>
+								</div>
+							</div>
+							<!-- /First step -->
+							<!-- Second step -->
+							<div class="checkout-form__second-step steps">
+								<div class="checkout-form-header">
+									<p class="checkout-form__summary">Summary</p>
+									<div class="row checkout-form__summary-row">
+										<div class="col-7">
+											<span class="checkout-label">
+												Medium Package<!-- dynamic value - seleted plan -->
+											</span>
+										</div>
+										<div class="col-5">
+											<span class="checkout-value">
+												(100-500 units)<!-- dynamic value - seleted plan -->
+											</span>
+										</div>
+									</div>
+									<div class="row checkout-form__summary-row">
+										<div class="col-7">
+											<span class="checkout-label">Total Implemetation Fee</span>
+										</div>
+										<div class="col-5">
+											<span class="checkout-value">$ XXXX <!-- dynamic value --></span>
+										</div>
+									</div>
+									<div class="row checkout-form__summary-row">
+										<div class="col-7">
+											<span class="checkout-label">Deposite (XX%) <!-- dynamic value --></span>
+										</div>
+										<div class="col-5">
+											<span class="checkout-value">$ XXX <!-- dynamic value --></span>
+										</div>
+									</div>
+									<!-- <div class="row checkout-form__summary-row">
+										<div class="col-7">
+											<span class="checkout-label">Estimate Monthly</span>
+										</div>
+										<div class="col-5">
+											<span class="checkout-value">$ 400<small>/month</small> </span>
+											<span class="checkout-value">
+												$ 375<small>/month</small>
+												<br/>
+												<p>(after discount XX%)</p>
+											</span>
+										</div>
+									</div> -->
+									<div class="row checkout-form__summary-row">
+										<div class="col-7">
+											<span class="checkout-label">Refferal Code</span>
+										</div>
+										<div class="col-5">
+											<a class="add-code-button">Add a code</a> <!-- Hides When the refferal code is aplyed -->
+											<p class="valid-code"><i class="fas fa-check"></i>Applyed</p> <!-- Shows When the code is aplyed -->
+										</div>
+									</div>
+									<!-- Refferal code section (Hides When the refferal code is aplyed) -->
+									<div class="add-code-container">
+										<div class="row gutters-small">
+											<div class="col-7">
+												<div class="checkout-form__item">
+													<input type="text"/>
+												</div>
+											</div>
+											<div class="col-5">
+												<a class="button-orange apply-discount">Apply</a>
+											</div>
+										</div>
+
+										<p class="invalid-code"><i class="fas fa-times"></i> Refferal Code in not Valid</p>
+									</div>
+									<!-- /Refferal code section -->
+									<!--Discount  Shows When the code is aplyed -->
+									<div class="checkout-discount">
+										<div class="row checkout-form__summary-row">
+											<div class="col-7">
+												<span class="checkout-label">Discount (XX%)</span>
+											</div>
+											<div class="col-5">
+												<span class="checkout-value">-$ XXXX</span>
+											</div>
+										</div>
+									</div>
+									<!-- /Discount  -->
+									<hr/>
+									<div class="row checkout-form__summary-row total-row">
+										<div class="col-7">
+											<span class="checkout-label">Due Now</span>
+										</div>
+										<div class="col-5">
+											<span class="checkout-value">$ 400<!-- dynamic value --></span>
+										</div>
+									</div>
+								</div>
+								<div class="checkout-form-body">
+									<!-- Payment button -->
+									<div class="google-pay"> <!-- BACKEND NEEDED -->
+										<p class="text_center">Google Pay Button - Backend</p>
+									</div>
+									<div class="apple-pay"> <!-- BACKEND NEEDED -->
+										<p class="text_center">Apple Pay Button - Backend</p>
+										<apple-pay-button buttonstyle="black" type="plain" locale="en"></apple-pay-button>
+									</div>
+									<!-- Payment button -->
+									<div class="pay-label"><span>or pay with card</span></div>
+									<div class="checkout-form__item">
+										<label><span class="label">Card data</span>
+											<div class="checkout-card">
+												<input type="text" name="card-number" pattern="\d*" placeholder="XXXX XXXX XXXX XXXX" required/>
+												<img src="img/icons/checkout-cards.png"/>
+											</div>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<div class="row gutters-small">
+											<div class="col-6">
+												<input type="text" name="card-expires" pattern="\d*" maxlength="7" placeholder="Mo/Year" required/>
+											</div>
+											<div class="col-6">
+												<div class="checkout-cvv">
+													<input type="text" name="card-cvc" pattern="\d*" placeholder="CVC/CVV" required/>
+													<img src="img/icons/checkout-cvv.png"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Name and surname indicated on the card</span>
+											<input type="text" required/>
+										</label>
+									</div>
+									<div class="checkout-form__item">
+										<label><span class="label">Country or region</span>
+											<input type="text"/>
+										</label>
+									</div>
+								</div>
+								<div class="checkout-form-footer text_center">
+									<a class="button-orange">Place Order</a>
+									<p class="text_center checkout-form__terms">By confirming your subscription, you authorize Booking  Ninjas to charge your card for this and future payments in accordance with the company's terms.</p>
+									<div class="checkout-form__bar">
+										<div class="bar"></div>
+									</div>
+								</div>
+							</div>
+							<!-- /Second step -->
+						</form>
+					</div>
+					<!-- /checkout form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-main-->
+
+</div>
+		
+
+
+<!--SCRIPT -->
+<!-- Google Pay -->
+<script	async src="https://pay.google.com/gp/p/js/pay.js" onload="console.log('TODO: add onload function')"></script>
+<!-- /Google Pay -->
+<!-- Apple Pay -->
+<script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+<!-- Apple Pay -->
+
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/slick.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/intlTelInput.min.js"></script> <!-- <Telephone Input https://github.com/jackocnr/intl-tel-input -->
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>

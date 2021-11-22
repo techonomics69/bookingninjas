@@ -1,0 +1,306 @@
+.trial {
+	background: linear-gradient(to right, #f7f7f7 50%, #fff 50%);
+	padding-top: 35px;
+	margin-top: 5px;
+	@include mq($max-width: 992px) {
+		background: #f7f7f7;
+	}
+	&__bg {
+		background: url('../img/trial-section-bg.png') no-repeat;
+		background-position: calc(50% - 280px) top;
+		@include mq($max-width: 1200px) {
+			background-position: calc(50% - 240px) top;
+		}
+		@include mq($max-width: 992px) {
+			background-position: center top;
+		}
+		&-ppc{
+		//	background: url('../img/trial-ppc-section-bg.jpg') no-repeat;
+			background-position: top;
+		}
+	}
+	&__col-padding {
+		padding-top: 450px;
+	}
+	&__col-bg {
+		background-color: #fff;
+	}
+	h4 {
+		font-size: 34px;
+		font-weight: 500;
+		letter-spacing: 1.7px;
+		letter-spacing: 1.7px;
+		text-align: center;
+		color: #222222;
+		padding-bottom: 20px;
+		@include mq($max-width: 992px) {
+			font-size: 24px;
+		}
+	}
+	h2 {
+		font-size: 24px;
+		font-weight: normal;
+		letter-spacing: 1.2px;
+		text-align: center;
+		color: #222222;
+		padding-bottom: 30px;
+	}
+	h3 {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		text-align: center;
+		color: #222222;
+		padding-bottom: 20px;
+	}
+	&__advantage {
+		font-size: 16px;
+		font-weight: 400;
+		padding: 0 50px;
+		padding-top: 35px;
+		padding-bottom: 30px;
+		li {
+			padding-bottom: 27px;
+			padding-left: 31px;
+			background: url(../img/check-mark4.png) no-repeat left 0px;
+		}
+	}
+	&__form {
+		padding: 0px 10px 30px;
+		input[type=text],
+		input[type=email],
+		input[type=tel],
+		select {
+			padding: 0 20px;
+			width: 100%;
+			background: #fff;
+			height: 60px;
+			border: none;
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0.8px;
+			color: #898989;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		input[type=tel] {
+			padding-left: 120px !important;
+		}
+		small {
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 0.7px;
+			color: #3e3e3e;
+			margin-top: -10px;
+			padding-bottom: 22px;
+			display: block;
+		}
+		&-item {
+			border-radius: 3px;
+			margin-bottom: 17px;
+			border: 1px solid #d7d7d7;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.11);
+			&-row {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-right: 20px;
+			}
+			i {
+				display: block;
+				font-size: 20px;
+				color: #e0e0e0;
+				padding-left: 20px;
+			}
+			&-payment {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 58px;
+				background: #000;
+				border: none;
+				border-radius: 3px;
+			}
+			&-lined {
+				padding-top: 8px;
+				padding-bottom: 27px;
+				font-size: 14px;
+				font-weight: 300;
+				letter-spacing: 0.7px;
+				text-align: center;
+				color: #707070;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				&:before,
+				&:after {
+					content: '';
+					flex: 1;
+					border-bottom: 1px solid #ccc;
+				}
+				&:before {
+					margin-right: 5px;
+				}
+				&:after {
+					margin-left: 5px;
+				}
+			}
+		}
+		&-item-check {
+			label {
+				padding-left: 30px;
+				padding-bottom: 30px;
+				position: relative;
+				display: block;
+				font-size: 14px;
+				line-height: normal;
+				color: #404040;
+			}
+			.trial__form-checkbox {
+				position: absolute;
+				left: 0;
+				top: 2px;
+				width: 17px;
+				height: 17px;
+				box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.63), inset 0 0 3px 0 rgba(0, 0, 0, 0.11);
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				&:checked:after {
+					content: '';
+					position: absolute;
+					display: block;
+					height: 11px;
+					width: 11px;
+					top: 3px;
+					left: 3px;
+					background: #ffb700;
+				}
+			}
+			a {
+				color: #5692ce;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&-btn {
+			text-align: center;
+			.button {
+				width: 100%;
+				max-width: 465px;
+			}
+		}
+		// International Telephone Input
+		.iti {
+			width: 100%;
+		}
+		.iti__selected-flag {
+			justify-content: center;
+			width: 100px;
+			border-right: 1px solid #d7d7d7;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+			background-color: #fff
+		}
+		.iti--separate-dial-code .iti__selected-flag {
+			background-color: #fff
+		}
+
+		&-ppc{
+			padding-top: 20px;
+			h3{
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__video{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		position: relative;
+		text-align: center;
+		padding-top: 56.25%;
+		&-responsive{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__program{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: #f7f7f7;
+	}
+}
+.trial-payment {
+	background: #f7f7f7;
+	padding-top: 25px;
+	padding-bottom: 100px;
+	margin-top: 5px;
+	img {
+		padding-bottom: 30px;
+	}
+	h1 {
+		font-size: 48px;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 2.4px;
+		color: #222222;
+		@include mq($max-width: 992px) {
+			font-size: 28px;
+		}
+	}
+	&__result {
+		font-size: 24px;
+		line-height: 1.88;
+		letter-spacing: 1.2px;
+		color: #222222;
+		padding-bottom: 16px;
+	}
+	.button {
+		margin-bottom: 19px;
+		width: 100%;
+		height: 54px;
+		box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.22);
+		letter-spacing: 0.9px;
+		&:hover {
+			box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.38);
+		}
+	}
+	.button-empty {
+		box-shadow: 0 0 2px 0 #868686;
+		background-color: #fafafa;
+		text-transform: none;
+		font-size: 18px;
+		font-weight: normal;
+		letter-spacing: 0.9px;
+		color: #636363;
+		border-radius: 28px;
+		&:hover {
+			box-shadow: 0 0 4px 0 #868686;
+		}
+	}
+	&__manage {
+		display: inline-block;
+		padding-top: 5px;
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		text-align: left;
+		color: #11a1ef;
+		text-decoration: none;
+	}
+}
+.trial-ppc{
+	background: #fff;
+}

@@ -1,0 +1,226 @@
+.consulting-landing{
+  position: relative;
+  .header.fixed{
+    background: #fff;
+  }
+  .navigation-dropdown ul{
+    background: #fff;
+  }
+  .navigation{
+    @include mq($max-width: 992px) {
+      background: #fff;
+    }
+  }
+}
+.consulting-hero{
+  height: 539px;
+  background: url(../img/consulting-clouds.png) no-repeat bottom center;
+  background-size: cover;
+  article{
+    text-align: center;
+    padding: 70px 0 0 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    h1{
+      font-size: 46px;
+      letter-spacing: 2.29px;
+      padding-bottom: 15px;
+      @include mq($max-width: 992px) {
+        font-size: 32px;
+      }
+    }
+    p{
+      padding-bottom: 30px;
+    }
+    .button{
+      color: #020202;
+    }
+  }
+}
+.consulting-services{
+  padding: 40px 0 70px 0;
+  text-align: center;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  section{
+    padding-bottom: 25px;
+  }
+  p{
+    padding-bottom: 20px;
+  }
+  h2{
+    color: #0d0d0d;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.78px;
+    padding-bottom: 20px;
+  }
+  h3{
+    color: #000000;
+    font-size: 23px;
+    letter-spacing: 1.14px;
+    padding-bottom: 0;
+  }
+  figure{
+    padding-bottom: 25px;
+  }
+  .button{
+    color: #020202;
+  }
+}
+.consulting-center{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/consulting-center.jpg);
+  //background-attachment: fixed;
+  padding: 120px 0 77px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  p{
+    padding-bottom: 70px;
+  }
+  .button{
+    margin: 0 15px;
+    color: #020202;
+    padding-left: 50px;
+    padding-right: 50px;
+    &.button-empty{
+      background: rgba(0,0,0,0.5);
+      border: 2px solid #fbcd04;
+      color: #fbcd04;
+      &:hover{
+        background: #fbcd04;
+        color: #020202;
+      }
+    }
+    @include mq($max-width: 992px) {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 0.8rem;
+    }
+  }
+}
+.consulting-testimonials{
+  padding: 44px 0 60px 0;
+  text-align: center;
+  .title{
+    padding-bottom: 15px;
+    span{
+      &:after{
+        content: '';
+        display: block;
+        width: 44px;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #fbcd04;
+      }
+    }
+  }
+  &__item{
+    background: #f5f5f5;
+    padding: 20px 12px;
+    margin-top: 40px;
+    color: #3c3c3c;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    @include mq($max-width: 992px) {
+      margin-bottom: 0;
+    }
+    p{
+      padding: 15px 0;
+    }
+    figure{
+      img{
+        max-width: 80%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .button{
+    @include mq($max-width: 992px) {
+      margin-top: 20px;
+    }
+  }
+}
+.consulting-contact{
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  .title{
+    padding-bottom: 15px;
+    text-align: left;
+    span{
+      &:after{
+        content: '';
+        display: block;
+        width: 44px;
+        height: 3px;
+        margin-top: 10px;
+        background: #fbcd04;
+      }
+    }
+  }
+  p{
+    padding-bottom: 33px;
+  }
+  &__item{
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+    p{
+      padding-bottom: 0;
+    }
+    img{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    strong{
+      display: block;
+      font-size: 23px;
+      font-weight: normal;
+    }
+  }
+  .button{
+    margin-bottom: 35px;
+    color: #000;
+  }
+  &__map{
+    iframe{
+      display: block;
+      width: 50vw;
+      @include mq($max-width: 992px) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.consulting-time, .consulting-date{
+  padding: 0 15px;
+  @include mq($max-width: 575px) {
+    margin-bottom: 15px;
+  }
+}
+.consulting-time{
+  background: #fff url(../img/clock-ico.png) no-repeat right 15px center !important;
+}
+.consulting-date{
+  background: #fff url(../img/calend-ico.png) no-repeat right 15px center !important;
+}
+.consulting-popup{
+  padding: 0;
+  background: none;
+  .fancybox-close-small{
+    display: none;
+  }
+}

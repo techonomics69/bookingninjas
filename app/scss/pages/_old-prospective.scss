@@ -1,0 +1,112 @@
+.prospective-think{
+	//background: #e8f2fb url(../img/think-bg.jpg) repeat-x left center;
+	background: #e8f2fb;
+	color: #335578;
+	font-size: 22px;
+	font-weight: 400;
+	&__img{
+		position: relative;
+		display: inline-block;
+		&:before{
+			content: '';
+			position: absolute;
+			right: 99%;
+			width: 100%;
+			background: #086183;
+			height: 67px;
+			bottom: 44px;
+		}
+	}
+}
+.prospective-form{
+	padding: 50px 0;
+	h2{
+		text-align: center;
+		font-weight: 400;
+		font-size: 30px;
+		padding-bottom: 50px;
+	}
+	.form__item{
+		background: #e8f2fb;
+	}
+	input.input-text.white{
+		background: none;
+	}
+}
+.prospective-bnr{
+	.container{
+		background: #fff9d9;
+		 position: relative;
+		 padding-bottom: 40px;
+		 &:before{
+		 	content: '';
+		 	position: absolute;
+		 	left: 100%;
+		 	margin-left: -400px; 
+		 	top: -55px;
+			width: 790px;
+			height: 211px;
+			background: url(../img/prospective-banner.png) no-repeat center;
+		 }
+	}
+	.row{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	h6{
+		color: #393939;
+		font-size: 48px;
+		letter-spacing: -1px;
+		font-weight: 300;
+	}
+	p{
+		color: #393939;
+		font-size: 22px;
+		font-weight: 300;
+	}
+	&__arrow{
+		text-align: center;
+		margin-top: -70px;
+		z-index: 2;
+		position: relative;
+	}
+	q{
+		color: #393939;
+		font-size: 48px;
+		font-weight: 100;
+		letter-spacing: 2.4px;
+		padding-left: 85px;
+		display: block;
+		img{
+			display: block;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+	}
+	h4{
+		color: #393939;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3.6px;
+		text-align: right;
+		padding-right: 70px;
+	}
+}
+.prospective-btn{
+	text-align: center;
+	padding: 45px 0;
+	h5{
+		color: #2e2e2e;
+		font-size: 30px;
+		font-weight: 300;
+		padding-bottom: 35px;
+	}
+	h6{
+		color: #01a6e5;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 2.7px;
+		padding-bottom: 50px;
+	}
+}

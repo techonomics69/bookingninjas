@@ -1,0 +1,104 @@
+.invite-page-top {
+	height: auto;
+	background: none;
+	padding: 60px 0;
+	@include mq($max-width: 992px) {
+		padding-bottom: 30px;
+	}
+	&:before,
+	&:after {
+		display: none;
+	}
+	h1 {
+		padding-top: 25px;
+		color: #373737;
+		font-weight: 700;
+		@include mq($max-width: 768px) {
+			padding-top: 25px;
+			font-size: 28px;
+		}
+	}
+	h1:after {
+		display: none;
+	}
+	p {
+		color: #282828;
+		line-height: 1.33;
+		letter-spacing: 0.9px;
+	}
+	&__img {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: url(../img/invite-top-bg.png);
+			z-index: -1;
+			left:430px;
+			bottom: 60px;
+			@include mq($max-width: 1200px) {
+				left:50%;
+			}
+		}
+	}
+}
+.invite-page {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.44;
+	letter-spacing: 0.9px;
+	color: #212020;
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1.8px;
+		padding-bottom: 25px;
+		@include mq($max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	&__community {
+		padding-top: 40px;
+		padding-bottom: 90px;
+		@include mq($max-width: 992px) {
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		img {
+			padding-bottom: 20px;
+		}
+	}
+	&__form {
+		padding-top: 42px;
+		padding-bottom: 80px;
+		background: #f8f8f8;
+		form {
+			margin-top: 30px;
+			margin-bottom: 40px;
+			width: 100%;
+			overflow: hidden;
+			display: flex;
+			background: #fff;
+			border-radius: 15px;
+			box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.29);
+			input[type=email] {
+				font-size: 16px;
+				font-weight: 300;
+				font-style: normal;
+				color: #969696;
+				background: none;
+				border: none;
+				box-shadow: none !important;
+				height: 59px;
+				flex: 1;
+				padding: 0 28px;
+			}
+			input[type=submit] {
+				padding: 18px 50px;
+				border-radius: 15px;
+			}
+		}
+	}
+}

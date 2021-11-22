@@ -1,0 +1,83 @@
+.core-page-timeline{
+  padding: 60px 0 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+  &:before{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 9px;
+    height: 100%;
+    background: #fbcd04;
+    top: 0;
+    content: '';
+  }
+  .about-page-content__title{
+    font-size: 30px;
+    @include mq($max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  &__item{
+    margin-bottom: 15px;
+    height: calc(100% - 15px);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
+    padding: 25px 15px;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    figcaption{
+      color: #000000;
+      font-size: 30px;
+      font-weight: 400;
+      @include mq($max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+    figure{
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px;
+      @include mq($max-width: 767px) {
+        padding-bottom: 20px;
+      }
+      span{
+        padding: 0 40px 0 0 ;
+        @include mq($max-width: 767px) {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+  &__item-title{
+    padding-bottom: 20px;
+  }
+  &__line{
+    margin-bottom: 15px;
+    height: 9px;
+    background: #fbcd04;
+    border-radius: 3px;
+    @include mq($max-width: 992px) {
+      display: none;
+    }
+  }
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.core-page-content{
+  background: url(../img/bg-about.png) repeat;
+}
+.core-page-video{
+  padding-bottom: 80px;
+}
+.core-page-timeline__item-big {
+  position: relative;
+  background: #fff;
+  h2{
+    padding-bottom: 20px;
+  }
+}

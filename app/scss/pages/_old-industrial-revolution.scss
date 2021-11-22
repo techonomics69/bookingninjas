@@ -1,0 +1,191 @@
+//industrial_revolution
+.industrial_revolution{
+	padding: 45px 0 ;
+	background:url(../img/industrial-revolution-bg.jpg) no-repeat center;
+	.container{
+		max-width: 1165px;
+	}
+}
+.industrial_revolution__top{
+	background:url(../img/industrial-revolution.jpg) no-repeat top center;
+	height: 1080px;
+}
+.industrial_revolution__top-text{
+	color: #393939;
+	text-align: center;
+	width: 680px;
+	margin: 0 auto;
+	font-size: 18px;
+	padding-top: 25px;
+	h3{
+		font-size: 30px;
+		padding-bottom: 30px;
+	}
+}
+.industrial_revolution__tags{
+	padding-top: 136px; 
+	display: flex;
+	justify-content: space-between;
+}
+.industrial_revolution__tags-item{
+	min-width: 24.5%;
+	max-width: 24.5%;
+	section{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 12px;
+		color: #fff;
+		background:#ef7532;
+		height: 300px;
+		font-size: 24px;
+		strong{
+			font-size: 30px;
+			display: block;
+			padding-bottom: 40px;
+		}
+		h6{
+			font-size: 36px; 
+		}
+	}
+	figure{
+	  width: 160px;
+	  height: 160px;
+	  margin: 0 auto;
+	  display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 6px solid #ef7532;
+		border-radius: 50%;
+		background:#fff;
+		margin-top: -80px;
+	}
+	&:nth-child(2){
+		section{
+			background:#f4ab4c;
+		}
+		figure{
+			border-color: #f4ab4c;
+		}
+		.industrial_revolution__tags-date{
+			color: #f4ab4c;
+			&:after{
+				border-color: #f4ab4c;
+			}
+		}
+	}
+	&:nth-child(3){
+		section{
+			background:#3391ab;
+		}
+		figure{
+			border-color: #3391ab;
+		}
+		.industrial_revolution__tags-date{
+			color: #3391ab;
+			&:after{
+				border-color: #3391ab;
+			}
+		}
+	}
+	&:nth-child(4){
+		section{
+			background:#109de6;
+		}
+		figure{
+			border-color: #109de6;
+		}
+		.industrial_revolution__tags-date{
+			color: #3391ab;
+			&:after{
+				border-color: #3391ab;
+			}
+		}
+	}
+}
+	.industrial_revolution__tags-img{
+		height: 180px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		padding-bottom: 15px;
+		img{
+			margin: 0 auto;
+		} 
+	}
+	.industrial_revolution__tags-date{
+		font-size: 22px;
+		color: #ef7532;
+		text-align: center;
+		padding-top: 38px;
+		position: relative;
+		margin-top: 40px;
+		&:after{
+			content: '';
+			width: 22px;
+			height: 22px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -11px;
+			background:#fff;
+			border: 3px solid #ef7532;
+			border-radius: 50%;
+		}
+		&:before{
+			content: '';
+			width: 8px;
+			height: 40px;
+			background:#fff;
+			position: absolute;
+			left: 50%;
+			margin-left: -4px;
+			top: -35px;
+		}
+	}
+.industrial_revolution__center{
+	color: #393939;
+	font-size: 16px;
+	padding: 30px 0 60px 0;
+}	
+	.industrial_revolution__center-item{
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		background:#d5ebf8;
+		border-radius: 12px;
+		padding: 20px;
+		& > b{
+			min-width: 140px;
+			text-align: center;
+			font-size: 22px;
+			font-weight: 700;
+			color: #ef7532;
+		}
+		&:nth-child(2){
+			& > b{
+				color: #f4ab4c;
+			}
+		}
+		&:nth-child(3){
+			& > b{
+				color: #3391ab;
+			}
+		}
+		&:nth-child(4){
+			& > b{
+				color: #109de6;
+			}
+		}
+	}
+.industrial_revolution__bottom{
+	text-align: center;
+	h2{
+		font-size: 36px;
+		font-weight: 700;
+		color: #119cd7; 
+		text-transform: uppercase;
+	}
+}

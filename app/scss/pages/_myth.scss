@@ -1,0 +1,165 @@
+.myth-truth {
+	padding-top: 50px;
+	h2 {
+		text-align: center;
+		font-size: 32px;
+		color: #464646;
+		padding-bottom: 40px;
+		font-weight: 300;
+		strong {
+			font-weight: bold;
+			color: #009ee2;
+		}
+	}
+	&__block {
+		height: 635px;
+		overflow: hidden;
+		position: relative;
+		&.active {
+			.myth {
+				animation-name: zoomOut;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				//height: 0;
+				z-index: 1;
+			}
+			.truth {
+				animation-name: zoomIn;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+		&.roll.active {
+			.myth {
+				animation-name: rollOut;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				//height: 0;
+				z-index: 1;
+			}
+			.truth {
+				animation-name: rollIn;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+		&.zoom.active {
+			.myth {
+				animation-name: zoomOutRight;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				//height: 0;
+				z-index: 1;
+			}
+			.truth {
+				animation-name: zoomInLeft;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+		&.flip.active {
+			.myth {
+				animation-name: flipOutX;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				//height: 0;
+				z-index: 1;
+			}
+			.truth {
+				animation-name: flipInX;
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+	}
+	&__item {
+		padding: 100px 0 0 0;
+		color: #ffffff;
+		width: 440px;
+		&.center {
+			text-align: center;
+			width: 100%;
+			padding-top: 40px;
+		}
+		&.right {
+			float: right;
+		}
+		&.blue {
+			color: #0f3754;
+		}
+		h6 {
+			font-size: 32px;
+			text-transform: uppercase;
+			padding-bottom: 22px;
+			font-weight: 600;
+		}
+		h5 {
+			font-size: 48px;
+		}
+		p {
+			font-size: 24px;
+			padding: 0;
+		}
+		.button {
+			margin-top: 20px;
+			height: 58px;
+			background: #faca47;
+			padding: 0 35px;
+			line-height: 58px;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #124955;
+			font-weight: 600;
+			border: none;
+			border-bottom: 2px solid #0b5223;
+			border-radius: 29px;
+			span {
+				&:after {
+					padding: 0 0 0 10px;
+					content: url(../img/icons/arrow.png);
+				}
+			}
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}
+.truth,
+.myth {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 635px;
+	z-index: 1;
+	background-color: #3ca5bb;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include transition(all 0.5s);
+	opacity: 0;
+}
+.myth {
+	z-index: 2;
+	opacity: 1;
+	animation-name: zoomIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.truth {
+	.myth-truth__item {
+		p {
+			font-size: 18px;
+			padding-bottom: 20px;
+		}
+	}
+}

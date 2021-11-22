@@ -1,0 +1,184 @@
+.about-page-top__img{
+  position: relative;
+  z-index: 1;
+}
+.einstein-page{
+  background: url(../img/about-bg-big.png) no-repeat bottom -550px left -500px, url(../img/bg-about.png) repeat;
+}
+.einstein-page-analytics{
+  padding: 75px 0 80px 0;
+  &__box{
+    padding: 0 0 0px 80px;
+    @include mq($max-width: 767px) {
+      padding: 0;
+    }
+  }
+  .container{
+    & > .einstein-page-analytics__box{
+      padding-left: 0;
+    }
+  }
+  &__section{
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    &:before{
+      content: '';
+      background: url(../img/einstein-arrow.png) no-repeat;
+      position: absolute;
+      left: 30px;
+      top: 140px;
+      width: 47px;
+      height: 95px;
+      @include mq($max-width: 767px) {
+        display: none;
+      }
+    }
+    &.hide-arrow{
+      &:before{
+        display: none;
+      }
+    }
+    @include mq($max-width: 767px) {
+      display: block;
+    }
+  }
+  &__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 135px;
+    background: #fff;
+    height: 135px;
+    border-radius: 50%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    @include mq($max-width: 767px) {
+      max-width: 135px;
+      margin: 0 auto;
+    }
+    img{
+      display: block;
+    }
+    figcaption{
+      width: 25px;
+      overflow: hidden;
+      height: 88px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      &:before{
+        content: '';
+        width: 135px;
+        border: 3px solid #fbd015;
+        height: 135px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__text{
+    padding: 25px;
+    padding-left: 54px;
+    margin-left: -25px;
+    background: #fff;
+    position: relative;
+    margin-top: 45px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+    color: #202020;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    @include mq($max-width: 767px) {
+      padding: 15px;
+      margin-left: 0;
+      font-size: 14px;
+    }
+  }
+  &__aside{
+    .about-page-content__title{
+      text-align: left;
+      padding-bottom: 25px;
+      @include mq($max-width: 992px) {
+        text-align: center;
+      }
+    }
+  }
+  &__aside-img{
+    float: right;
+    @include mq($max-width: 992px) {
+      float: none;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+.einstein-page-end{
+  padding-bottom: 50px;
+  @include mq($max-width: 767px) {
+    padding-bottom: 20px;
+  }
+  article{
+    padding: 20px 20px 20px 40px;
+    background: #f6f6f6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #272727;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+    margin-left: 15px;
+    @include mq($max-width: 992px) {
+      padding: 15px;
+      margin-left: 0;
+    }
+    @include mq($max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  .text_right{
+    @include mq($max-width: 767px) {
+      text-align: center !important;
+    }
+  }
+  figure{
+    text-align: center;
+    min-width: 125px;
+    position: relative;
+    z-index: 1;
+    figcaption{
+      background: #fbcd04;
+      color: #2b2b2b;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 8px;
+      padding: 4px 10px;
+    }
+  }
+}
+.einstein-page-bottom{
+  color: #272727;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-bottom: 60px;
+  padding-top: 80px;
+  @include mq($max-width: 767px) {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  p{
+    padding-bottom: 20px;
+  }
+  &__img{
+    @include mq($max-width: 992px) {
+      text-align: center;
+      padding-bottom: 20px;
+      img{
+        max-width: 70%;
+      }
+    }
+  }
+}

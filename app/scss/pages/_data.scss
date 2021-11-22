@@ -1,0 +1,116 @@
+.data-top__img{
+  text-align: center;
+}
+.data-top{
+  @extend .why-top;
+  margin-bottom: 0;
+  p{
+    padding-bottom: 20px;
+  }
+}
+.data-content{
+  h1{
+    text-align: center;
+    color: #111111;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  h2{
+    color: #1c1c1c;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+  h5{
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+  }
+}
+.data-check-items{
+  padding: 0 0 60px 0;
+  span{
+    color: #111111;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 25px 0 0;
+    &:before{
+      content: url(../img/check-data.png) ;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 10px 0 0;
+    }
+  }
+  em{
+    font-style: normal;
+    color: #111111;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 25px 0 0;
+  }
+}
+.data-gray{
+  background: #f6f6f6;
+  h2.data-gray__title{
+    text-align: center;
+    display: flex;
+    color: #1c1c1c;
+    font-size: 48px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    left: 44px;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+    @include mq($max-width: 992px) {
+      top: 0;
+      padding-top: 20px;
+    }
+    span{
+      padding: 0 15px;
+    }
+    small{
+      text-transform: none;
+      text-align: left;
+      font-size: 36px;
+    }
+    @include mq($max-width: 767px) {
+      display: block;
+      font-size: 26px;
+      padding-top: 30px;
+      left: 0;
+      max-width: 100%;
+      padding-bottom: 30px;
+      span{
+        display: none;
+      }
+      small{
+        font-size: 26px;
+      }
+      br{
+        display: none;
+      }
+    }
+  }
+  .solution-page-integration__section{
+    margin-top: -110px;
+    @include mq($max-width: 992px) {
+      margin-top: 0;
+    }
+  }
+  .solution-page-integration__item{
+    align-items: center;
+    p{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+.data-page-bottom{
+  h3{
+    text-transform: none;
+  }
+}

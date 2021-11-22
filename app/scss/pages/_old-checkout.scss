@@ -1,0 +1,543 @@
+.bnr-checkout {
+	background: #f9fcff;
+}
+.checkout-filter {
+	padding-top: 43px;
+	padding-bottom: 28px;
+	background: #f9fcff;
+	@include mq($max-width: 767px) {
+		text-align: center;
+	}
+	h3 {
+		color: #141313;
+		font-size: 24px;
+		font-weight: 500;
+		letter-spacing: 1.2px;
+		padding-bottom: 15px;
+		text-align-last: left;
+		@include mq($max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+	.button-empty {
+		margin-top: 20px;
+		padding: 12px 22px;
+		border: solid 1px #5187fb;
+		background-color: #ffffff;
+		border-radius: 3px;
+		font-size: 16px;
+		letter-spacing: 0.16px;
+		color: #5285fb;
+		text-transform: none;
+		box-shadow: none;
+		&:hover {
+			background: #f2f6ff;
+		}
+	}
+}
+.checkout-product {
+	&__table {
+		margin-bottom: 20px;
+		p {
+			font-size: 14px;
+			font-weight: 100;
+			letter-spacing: 0.7px;
+			color: #000;
+		}
+		h5 {
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: 0.2px;
+			color: #2e3949;
+			padding-bottom: 8px;
+			@include mq($max-width: 767px) {
+				font-size: 16px;
+			}
+		}
+		span {
+			font-size: 28px;
+			font-weight: 300;
+			line-height: 1.07;
+			letter-spacing: 1.4px;
+			text-align: center;
+			color: #000;
+			@include mq($max-width: 767px) {
+				font-size: 16px;
+			}
+		}
+		&-item {
+			padding: 16px 23px;
+			border-bottom: 1px solid #d4d6d8;
+			.checkout-porduct__remove i {
+				color: #5285fb;
+				font-size: 28px;
+				font-weight: 500;
+				@include mq($max-width: 600px) {
+					font-size: 20px;
+				}
+			}
+			a {
+				text-decoration: none;
+			}
+			//
+			& [class*="col"] {
+				padding: 0 15px;
+				@include mq($max-width: 767px) {
+					padding: 0 5px;
+				}
+			}
+			.pricing-section__buy-select{
+				max-width: 110px;
+				select{
+					@include mq($max-width: 767px) {
+						font-size: 16px;
+					}
+				}
+			
+			}
+		}
+		&-head {
+			padding: 14px 23px;
+			background: #e4eaf1;
+			span {
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 1.33;
+				letter-spacing: 0.9px;
+				color: #273a69;
+				border-bottom: none;
+				@include mq($max-width: 767px) {
+					font-size: 16px;
+				}
+			}
+		}
+		&-foot {
+			margin-top: 5px;
+			background: #e4eaf1;
+			p {
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 0.4px;
+				color: #424242;
+				padding-bottom: 12px;
+			}
+			input {
+				width: 100%;
+				height: 49px;
+				font-size: 16px;
+				border-radius: 3.4px;
+				box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.56);
+				background: #fff;
+			}
+		}
+	}
+	&__channel-manager {
+		padding-bottom: 8px;
+		.button {
+			padding-left: 35px;
+			padding-right: 35px;
+			margin-bottom: 15px;
+			font-size: 16px;
+			text-transform: none;
+		}
+		.button-empty {
+			padding-left: 50px;
+			padding-right: 50px;
+			border: solid 1px #5082f7;
+			background-color: #ffffff;
+			letter-spacing: 0.16px;
+			color: #5284fc;
+			box-shadow: none;
+			&:hover {
+				background: #f2f6ff;
+			}
+		}
+	}
+}
+.checkout__sidebar {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.09);
+	border: solid 1px rgba(0, 0, 0, 0.06);
+	background-color: #ffffff;
+	padding: 25px 30px;
+	margin-bottom: 30px;
+	h3 {
+		color: #141313;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		padding-bottom: 28px;
+		@include mq($max-width: 767px) {
+			font-size: 18px;
+			padding-bottom: 15px;
+		}
+	}
+	h4 {
+		color: #141313;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 0.9px;
+		padding-bottom: 37px;
+		@include mq($max-width: 767px) {
+			font-size: 14px;
+			padding-bottom: 18px;
+		}
+	}
+	ul {
+		color: #737373;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.9px;
+		padding-bottom: 4px;
+		@include mq($max-width: 767px) {
+			font-size: 14px;
+		}
+		li {
+			padding-left: 43px;
+			position: relative;
+			margin-bottom: 15px;
+			@include mq($max-width: 767px) {
+				padding-left: 30px;
+			}
+			img {
+				position: absolute;
+				left: 0;
+				top: -4px;
+				@include mq($max-width: 767px) {
+				width: 20px;
+				top: 0px;
+				}
+			}
+		}
+	}
+	p {
+		em {
+			color: #797979;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 0.8px;
+			@include mq($max-width: 767px) {
+				font-size: 14px;
+			}
+		}
+	}
+}
+.checkout__sidebar-trial {
+	background: #e4eaf1;
+	padding: 20px 10px;
+	text-align: center;
+	margin-left: -30px;
+	margin-right: -30px;
+	color: #2a2a2a;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	margin-bottom: 19px;
+
+}
+.checkout-payment {
+	&__content {
+		padding: 15px 17px 35px;
+		background: #fff;
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.09);
+		border: solid 1px rgba(0, 0, 0, 0.06);
+		h2 {
+			color: #2e3949;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: 0.3px;
+			padding-bottom: 20px;
+			@include mq($max-width: 767px) {
+				font-size: 24px;
+				padding-bottom: 15px;
+			}
+		}
+		p {
+			color: #a9a9a9;
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 0.14px;
+			padding-bottom: 25px;
+		}
+	}
+	&__payment-btn {
+		padding-bottom: 23px;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 15px;
+			li {
+				margin-right: 20px;
+				@include mq($max-width: 767px) {
+					width: 100%;
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		a {
+			color: #878787;
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 0.8px;
+			padding: 0 10px;
+			background: #fff;
+			box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.21);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 54px;
+			text-decoration: none;
+			border: 2px solid transparent;
+			@include mq($max-width: 767px) {
+				font-size: 12px;
+			}
+			img {
+				padding-right: 15px;
+			}
+			&.active,
+			&:hover {
+				box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.21);
+				border: solid 2px #5187fb;
+				border-radius: 2px;
+			}
+		}
+	}
+	&__form {}
+	&__form-item {
+		padding: 0 15px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.79);
+		margin-bottom: 14px;
+		border-radius: 2px;
+		input {
+			width: 100%;
+			box-shadow: none !important;
+			border: none;
+			height: 60px;
+			padding: 0;
+			color: #898989;
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0.8px;
+		}
+		i {
+			display: block;
+			width: 100%;
+			text-align: center;
+			font-size: 26px;
+			color: #e0e0e0;
+			padding-right: 9px;
+		}
+	}
+	&__form-check {
+		color: #555555;
+		font-size: 14px;
+		font-weight: 300;
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+		margin-top: 15px;
+		input {
+			min-width: 20px;
+			width: 20px;
+			height: 20px;
+			border: none;
+			position: relative;
+			box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.21);
+			appearance: none;
+			cursor: pointer;
+			&:checked:after {
+				content: '';
+				position: absolute;
+				display: block;
+				height: 14px;
+				width: 14px;
+				top: 3px;
+				left: 3px;
+				background: #5187fb;
+			}
+		}
+		label {
+			padding-left: 15px;
+		}
+		a {
+			color: #5692ce;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__form-button {
+		text-align: center;
+		.button {
+			width: 100%;
+			max-width: 310px;
+			cursor: pointer;
+		}
+	}
+}
+.input-number {
+	padding: 5px 21px 5px 5px;
+	position: relative;
+	height: 44px;
+	max-width: 69px;
+	width: 100%;
+	background: #fff;
+	box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.56);
+	border-radius: 3px;
+	@include mq($max-width: 600px) {
+		max-width: 53px;
+		;
+	}
+	input[type=number] {
+		width: 100%;
+		height: 34px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 500;
+		color: #424242;
+		-moz-appearance: textfield;
+		-webkit-appearance: textfield;
+		appearance: textfield;
+		@include mq($max-width: 767px) {
+			font-size: 16px;
+		}
+	}
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+		display: none;
+	}
+	button {
+		background: #fff;
+		i {
+			font-size: 22px;
+			line-height: 1;
+			font-weight: 900;
+			color: #bfbfbf;
+		}
+	}
+	&__plus {
+		position: absolute;
+		content: '';
+		top: 3px;
+		right: 8px;
+		padding: 0;
+		display: block;
+	}
+	&__minus {
+		position: absolute;
+		content: '';
+		right: 8px;
+		bottom: 3px;
+		padding: 0;
+		display: block;
+	}
+}
+.checkout-form {
+	background: #f9fcff;
+	padding-bottom: 70px;
+}
+
+//  add more products popup
+.add-more-products {
+	margin: 0 0;
+	padding: 35px 0 0;
+	max-width: 950px;
+	width: 100%;
+}
+.product-list {
+	width: 100%;
+	padding: 35px 20px 20px;
+	overflow: auto;
+	overflow-x: hidden;
+	max-height: calc(100vh - 100px);
+	&__item {
+		background: #f9fcff;
+		border: 1px solid rgba(0, 0, 0, 0.16);
+		margin-bottom: 10px;
+		text-align: left;
+		@include mq($max-width: 767px) {
+			text-align: center;
+		}
+	}
+	&__left {
+		padding: 10px 0;
+		height: 100%;
+		padding: 4px 15px;
+		background: url(../img/product-list__left-bg.png) no-repeat left center;
+		background-size: 100% 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		font-size: 18px;
+		letter-spacing: 0.9px;
+		line-height: 1;
+		color: #ffffff;
+		@include mq($max-width: 767px) {
+			justify-content: center;
+			height: 50px;
+		}
+		strong {
+			text-align: left;
+			font-size: 24px;
+			font-weight: 500;
+			letter-spacing: 1px;
+		}
+		small {
+			font-size: 18px;
+			letter-spacing: 0.7px;
+			font-weight: 300;
+		}
+	}
+	&__text {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 6px 0;
+		@include mq($max-width: 767px) {
+			padding: 15px;
+		}
+		@include mq($max-width: 767px) {
+		justify-content: center;
+		}
+		h3 {
+			color: #000000;
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.22px;
+			@include mq($max-width: 992px) {
+				font-size: 18px;
+			}
+		}
+	}
+	&__buy {
+		padding: 9px 0;
+		padding-right: 20px;
+		//text-align: center;
+		@include mq($max-width: 767px) {
+			padding: 10px 15px;
+		}
+	}
+	.button-empty {
+		max-width: 235px;
+		width: 100%;
+		padding: 13px 12px;
+		border: solid 1px #5187fb;
+		background-color: #ffffff;
+		border-radius: 5px;
+		font-size: 16px;
+		letter-spacing: 0.16px;
+		color: #5285fb;
+		text-transform: none;
+		box-shadow: none;
+		&:hover {
+			background: #f2f6ff;
+		}
+	}
+}

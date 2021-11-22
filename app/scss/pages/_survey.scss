@@ -1,0 +1,40 @@
+.survey-item{
+  position: relative;
+  display: block;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  img{
+    width: 100%;
+    display: block;
+  }
+  span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1.6px;
+    width: 279px;
+    @include mq($max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+}
+.survey-text{
+  padding: 90px 0 56px 0;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+}
+.survey-section{
+  padding-bottom: 0px;
+}
+.survey-box{
+  background:  url(../img/bg-about.png) repeat;
+  padding-bottom: 60px;
+  .pager{
+    padding-top: 10px;
+  }
+}

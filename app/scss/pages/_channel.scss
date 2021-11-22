@@ -1,0 +1,122 @@
+.channel-page__top {
+	height: auto;
+	background: none;
+	padding-top: 60px;
+	padding-bottom: 110px;
+	@include mq($max-width: 992px) {
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	h1 {
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 0.48px;
+		color: #4b4b4b;
+		padding-top: 15px;
+		padding-bottom: 30px;
+		margin: 0;
+		@include mq($max-width: 768px) {
+			font-size: 24px;
+			padding-bottom: 15px;
+		}
+	}
+	p {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: normal;
+		letter-spacing: 0.18px;
+		color: #414141;
+		padding-bottom: 30px;
+	}
+}
+.channel-page__video {
+	padding-bottom: 75px;
+	.review-page__content-img {
+		justify-content: center;
+	}
+}
+.channel-page__partners {
+	padding-bottom: 75px;
+	@include mq($max-width: 992px) {
+		padding-bottom: 30px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 1.8px;
+		text-align: center;
+		color: #212020;
+		padding-bottom: 30px;
+		@include mq($max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.33;
+		letter-spacing: 0.9px;
+		text-align: center;
+		color: #212020;
+		padding-bottom: 30px;
+	}
+	&-logo {
+		padding: 30px 0;
+		figure {
+			height: 100px;
+			padding: 5px 30px;
+			margin-bottom: 28px;
+			background: #fff;
+			box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		img {
+			height: auto;
+			max-height: 100%;
+			width: auto;
+			max-width: 100%;
+		}
+	}
+}
+.channel-page__description {
+	padding-bottom: 100px;
+	@include mq($max-width: 992px) {
+		padding-bottom: 30px;
+	}
+	h2 {
+		letter-spacing: 1.8px;
+		text-align: center;
+		color: #212020;
+		@include mq($max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.67;
+		letter-spacing: 0.9px;
+		color: #202020;
+	}
+	.calendly-page__description-item:before {
+		top: 0;
+	}
+	.calendly-page__description-item:after {
+		top: 30px;
+	}
+	.calendly-box__half-gray {
+		@include mq($max-width: 768px) {
+      padding-bottom: 1px;
+      margin-bottom: 20px;
+		}
+		&:before {
+			height: 87%;
+			@include mq($max-width: 768px) {
+				height: 100%;
+			}
+		}
+	}
+}

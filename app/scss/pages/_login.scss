@@ -1,0 +1,281 @@
+.button-sign-in{
+  border-radius: 4px;
+  background: #fff;
+  color: #fbcd04;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  padding: 15px 20px;
+  text-transform: none;
+  width: 140px;
+  max-width: 100%;
+}
+.login-page{
+  background: url(../img/login-gray.jpg) no-repeat right 10% bottom 3%;
+}
+.header-login{
+  position: absolute;
+}
+.login-page-top{
+  padding: 130px 0 85px 0;
+  background: url(../img/login-yellow.jpg) no-repeat;
+  background-position: right -680px top -550px;
+  &__section{
+    box-shadow: 0 0 29px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    padding: 40px 25px 50px 25px;
+    border-radius: 25px;
+    h5{
+      color: #241a03;
+      font-size: 36px;
+      font-weight: 500;
+      padding-bottom: 33px;
+      letter-spacing: 1.8px;
+      text-align: center;
+      @include mq($max-width: 767px) {
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+    }
+    p{
+      color: #898989;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      padding-bottom: 30px;
+    }
+  }
+  &__form{
+    position: relative;
+    color: #424242;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    a{
+      color: #0382f2;
+      letter-spacing: 0.7px;
+    }
+    .text_right{
+      @include mq($max-width: 767px) {
+        text-align: left !important;
+        padding-top: 15px;
+      }
+    }
+  }
+    &__form-item{
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.21);
+      background: #fff; 
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+      i{
+        opacity: 0.15;
+        padding-left: 20px;
+      }
+      input{
+        flex: 1;
+        color: #898989;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        background: none;
+        height: 69px;
+        border: none;
+        padding-left: 15px;
+        box-shadow: none !important;
+      }
+    }
+    &__form-checkbox{
+      color: #555555;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.7px;
+      padding-bottom: 25px;
+      input{
+        margin-right: 13px;
+        display: inline-block;
+      }
+    }
+    &__form-line{
+      text-align: center;
+      margin-top: 30px;
+      position: relative;
+      &:before{
+        content: '';
+        background: #e8e8e8;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -1px;
+      }
+      span{
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding: 0 10px;
+        color: #b8b8b8;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+      }
+    }
+    &__form-button{
+      .button{
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 17px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+      }
+    }
+    &__social{
+      margin-top: 19px;
+      text-align: center;
+      h6{
+        color: #555555;
+        font-size: 14px;
+        font-weight: 300;
+        padding-bottom: 20px;
+        letter-spacing: 0.7px;      
+      }
+      nav{
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background: #3c5a99;
+          width: 100%;
+          border-radius: 4px;
+          margin-bottom: 17px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0.8px;
+          height: 54px;
+          text-decoration: none;
+          &:hover{
+            opacity: 0.9;
+          }
+          i{
+            position: absolute;
+            left: 19px;
+            transform: translateY(-50%);
+            top: 50%;
+            font-size:  33px;
+            text-shadow: none;
+          }
+          &.linkedin{
+            background: #1060a6;
+          }
+        }
+      }
+    }
+    &__section-title{
+      h5{
+        padding-bottom: 60px;
+        color: #303030;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;  
+        @include mq($max-width: 992px) {
+          font-size: 25px;
+          padding-bottom: 30px;
+          text-align: center;
+        }
+      }
+      .button{
+        border: 12px solid #fff;
+        width: 215px;
+        display: block;
+        i{
+          padding: 0 15px 0 0;
+        }
+        @include mq($max-width: 992px) {
+          margin: 0 auto; 
+        }
+      }
+    }
+    &__image{
+      @include mq($max-width: 992px) {
+        margin: 0 auto; 
+        display: block;
+        margin-bottom: 30px;
+        width: 300px;
+      }
+    }
+}
+.login-page-content{
+  padding-bottom: 50px;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0.9px;
+  .video__img{
+    width: 100%;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+      border-radius: 30px;
+    }
+    &:before{
+      display: none;
+    }
+  }
+  p{
+    padding-bottom: 25px;
+  }
+  img{
+    @include mq($max-width: 992px) {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  h3{
+    color: #353535;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding-bottom: 40px;
+    @include mq($max-width: 992px) {
+      text-align: center;
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+  }
+}
+.login-page-bottom{
+  text-align: center;
+  padding: 50px 0 70px 0;
+  h5{
+    display: inline-block;
+    color: #353535;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding-right: 50px;
+    vertical-align: middle;
+    @include mq($max-width: 992px) {
+      display: block;
+      padding-right: 0;
+      padding-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+  .button{
+    width: 213px;
+    vertical-align: middle;
+    i{
+      padding: 0 15px 0 0;
+    }
+  }
+}

@@ -1,0 +1,396 @@
+.feature-spotlight{
+  position: relative;
+  padding: 100px 0 200px 0;
+  color: #212020;
+  font-size: 18px;
+  font-weight: 300;
+  .title{
+    padding-bottom: 35px;
+    &.blue-border{
+      border-bottom: 5px solid #3cb0fd;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      @include mq($max-width: 767px) {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+  .back{
+    color: #212020;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 25px;
+    display: block;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  @include mq($max-width: 767px) {
+    padding: 70px 0 100px 0;
+  }
+  &__slider-text{
+    padding: 30px 0 0 0;
+    color: #212020;
+    font-size: 18px;
+    font-weight: 300;
+    h1{
+      color: #212020;
+      font-size: 36px;
+      font-weight: 700;
+      padding-bottom: 30px;
+      @include mq($max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+    p{
+      padding-bottom: 30px;
+    }
+    hr{
+       border: 1px solid #cfcfcf;
+       margin: 0 0 30px 0;
+    }
+    ul{
+      padding-bottom: 30px;
+      li{
+        padding: 0 0 15px 50px;
+        position: relative;
+        @include mq($max-width: 767px) {
+          padding-left: 30px;
+        }
+        &:before{
+          width: 24px;
+          height: 24px;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+          background: #fbcd04;
+          @include mq($max-width: 767px) {
+            width: 14px;
+            height: 14px;
+            top: 5px;
+          }
+        }
+      }
+    }
+    .button{
+      color: #000;
+      min-width: 200px;
+    }
+  }
+  &__slider{
+    img{
+      width: 100%;
+    }
+  }
+  &__slider-big{
+    box-shadow: 0 10px 24px rgba(1, 2, 2, 0.08);
+    margin-bottom: 20px;
+  }
+  &__slider-small{
+    position: relative;
+    .slick-slide > div{
+      box-sizing: border-box;
+      padding: 15px;
+      box-shadow: 0 10px 14px rgba(1, 2, 2, 0.08);
+      background-color: #ffffff;
+      margin-bottom: 25px;
+     // margin: 0 15px;
+     @include mq($max-width: 767px) {
+       padding: 5px;
+     }
+    }
+    img{
+      display: block;
+    }
+    .slick-slide {
+      margin: 0 15px;
+      outline: none !important;
+      @include mq($max-width: 767px) {
+        margin: 0 5px;
+      }
+    }
+    .slick-list {
+      margin: 0 -15px;
+      @include mq($max-width: 767px) {
+        margin: 0 -5px;
+      }
+    }
+    .slick-current{
+      & > div{
+        border: 1px solid #cfcfcf;
+      }
+    }
+    .slick-list {
+        outline: none !important;
+    }
+    .slick-arrow{
+      position: absolute;
+      top: 0;
+      right: -15px;
+      height: 100%;
+      width: 170px;
+      z-index: 2;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+      @include hide-text;
+      &:before{
+        content: '';
+        background: url(../img/arrow_Left.png) no-repeat;
+        width: 32px;
+        height: 22px;
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 30px;
+        transform: translateY(-50%);
+      }
+      &.slick-prev{
+        right: auto;
+        left: -15px;
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        &:before{
+          right: auto;
+          left: 30px;
+          transform: translateY(-50%) scale(-1, 1);
+        }
+      }
+      &.slick-disabled{
+        visibility: hidden;
+      }
+    }
+  }
+  &__grid{
+    padding-bottom: 150px;
+    .container-fluid{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include mq($max-width: 767px) {
+      padding-bottom: 50px;
+    }
+  }
+  &__grid-item{
+    background-color: #f2f2f2;
+    display: flex;
+    width: 100%;
+    min-height: 25.26vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    @include mq($max-width: 1200px) {
+      padding: 15px 0;
+    }
+    @include mq($max-width: 767px) {
+      height: auto;
+      min-height: 0px;
+    }
+    &:hover{
+      .feature-spotlight__grid-button{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 80%;
+    }
+    figcaption{
+      color: #ffffff;
+      font-size: 1.875VW;
+      font-weight: 700;
+      padding-bottom: 2.34375VW;
+      @include mq($max-width: 767px) {
+        font-size: 16px;
+        padding-bottom: 1em;
+      }
+    }
+    &.light{
+      figcaption{
+        color: #212020;
+      }
+    }
+  }
+  &__grid-button{
+    opacity: 0;
+    @include transition(all 0.5s);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 4.6875VW;
+    background-image: linear-gradient(to top, rgba(51, 51, 46, 0.5) 0%, rgba(51, 51, 46, 0) 100%);
+    .button{
+      @include mq($min-width: 768px) {
+      font-size: 0.9375VW;
+      text-transform: none;
+      color: #212020;
+      padding:  1.145vw  2.08vw;
+      }
+    }
+  }
+  &__text{
+    padding-bottom: 60px;
+    p{
+      padding-bottom: 35px;
+    }
+    &.pb{
+      padding-bottom: 150px;
+      @include mq($max-width: 767px) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  &__tag{
+    padding-bottom: 40px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+    @include mq($max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__tag-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbcd04;
+    @include mq($max-width: 767px) {
+      display: inline-flex;
+      margin-bottom: 15px;
+    }
+  }
+  &__2collumn-text{
+    color: #212020;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    @include mq($max-width: 767px) {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    p{
+      padding-bottom: 30px;
+      strong{
+        font-size: 22px;
+      }
+    }
+  }
+  &__picture{
+    padding-bottom: 100px;
+    @include mq($max-width: 767px) {
+      padding-bottom: 30px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .costumer-page__view-list{
+    h2{
+      padding-bottom: 35px;
+    }
+  }
+  &__text-section{
+    color: #212020;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding-bottom: 100px;
+    @include mq($max-width: 767px) {
+      padding-bottom: 50px;
+    }
+    h2{
+      color: #212020;
+      font-size: 36px;
+      font-weight: 700;
+      
+      text-align: center;
+      padding-bottom: 40px;
+      @include mq($max-width: 767px) {
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+    }
+    p{
+      padding-bottom: 30px;
+    }
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        small{
+          padding-left: 35px;
+          @include mq($max-width: 767px) {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__text-section-numb{
+    color: #fbcd05;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 44px;
+    text-transform: uppercase;
+    background-color: #fff7e5;
+    min-width: 70px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transform: rotate(-45deg);
+    span{
+      display: block;
+      transform: rotate(45deg);
+    }
+    @include mq($max-width: 767px) {
+      min-width: 40px;
+      min-height: 40px;
+      font-size: 20px;
+    }
+  }
+  &__pager{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item{
+      width: calc(50% - 15px);
+      box-shadow: 0 20px 50px rgba(1, 1, 1, 0.05);
+      border-radius: 10px;
+      background-color: #ffffff;
+      max-height: 208px;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #212020;
+      font-size: 22px;
+      font-weight: 700;
+      &:hover{
+        opacity: 0.8;
+      }
+      @include mq($max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        padding: 20px;
+      }
+    }
+  }
+}
+.feature-spotlight-bg{
+  background: url(../img/feature-spotlight-bg.jpg) no-repeat bottom center;
+}

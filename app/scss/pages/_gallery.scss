@@ -1,0 +1,119 @@
+.gallery-content{
+  padding: 30px 0;
+}
+.gallery__sidebar{
+  margin-bottom: 30px;
+  a{
+    padding: 20px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #f9f9f9;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    color: #2e3949;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    &.active, &:hover{
+      background: #fbcd04;
+      border-color: #fbcd04;
+    }
+  }
+}
+.gallery-content__tab{
+  color: #111111;
+  font-size: 18px;
+  font-weight: 300;
+  p{
+    padding-bottom: 25px;
+  }
+  figure{
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+      display: block;
+      box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+      background-color: #000000;
+    }
+  }
+}
+.pager{
+  padding-top: 50px;
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      padding: 0 5px;
+    }
+    a{
+      width: 45px;
+      height: 45px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      &.active, &:hover{
+        background: #fbcd04;
+        border-color: #fbcd04;
+      }
+    }
+  }
+}
+.gallery-content__switch{
+  color: #111111;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+  .gallery-content__switch-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label{
+      width: 74px;
+      height: 38px;
+      margin: 0 8px;
+      border-radius: 16px;
+      background: #facc04;
+      border: 1px solid rgba(0, 0, 0, 0.23);    
+      position: relative;
+      input{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+        &:checked + span{
+          left: calc(100% - 34px);
+        }
+      }
+      span{
+        width: 30px;
+        height: 30px;
+        display: block;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 4px;
+        top: 3px;
+        @include transition(all 0.3s);
+      }
+    }
+  }
+  .gallery-content__tab{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }

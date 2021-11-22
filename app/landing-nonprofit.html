@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="initial-scale=1"/>
+		<title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+		<!--Favicon-->
+			<link rel="icon" type="image/png" href="favicon.ico">
+		<!--End Favicon-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	   <!--build:css css/styles.min.css-->
+		<link rel="stylesheet" href="css/fontawesome.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link href="css/screen.css" rel="stylesheet" media="screen"> 
+		<!--endbuild-->
+	</head>
+<body class="landing__nonprofit-wrapper" style="background-image: url(img/landing-nonprofit-top-bg.jpg);  background-position: center top 40px;"> 
+
+	<div class="wrapper" style="background-image: url(img/landing-center-bg14.png);">
+	<!--header-->
+	<header class="header header-index">	
+		<div class="row align-items-center justify-content-between">
+			<div class="col-auto logo-wrap">
+				<a class="logo" href="/"><img alt="Booking Ninjas Logo" src="img/logo-icon.png" /></a>
+			</div>
+			<div class="col col-xl-8">
+				<button class="navigation__button"><i class="fas fa-bars"></i></button>
+				<nav class="navigation">
+					<ul>
+						<li>
+							<a class="navigation-dropdown__click">GETTING STARTED</a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+									<li><a href="/solutions">SOLUTIONS</a></li>
+									<li><a href="/advantages">ADVANTAGES</a></li>
+									<li><a href="/why-booking-ninjas">WHY BOOKINGNINJAS?</a></li>
+									<li><a href="/pricing">PRICING</a></li>
+									<li><a href="/gdpr">GDPR</a></li>
+									<li><a href="/industrial-revolution">INDUSTRIAL REVOLUTION</a></li>
+									<li><a href="/artificial-intelligence">ARTIFICIAL INTELLIGENCE</a></li>
+									<li><a href="/competitive-matrix">COMPETITIVE MATRIX</a></li>
+									<li><a href="/glance">GLANCE</a></li>
+									<li><a href="/pms">PMS</a></li>
+									<li><a href="/pms-built-on-salesforce">PMS ON SALESFORCE</a></li>
+									<li><a href="/best-hotel-pms">HOTEL PMS</a></li>
+									<li><a href="/consultation">CONSULT</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="navigation-dropdown__click">HOW IT WORKS</a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+									<li><a href="/buying-process">PROCESS</a></li>
+									<li><a href="/integrations">INTEGRATIONS</a></li>
+									<li><a href="/implementation">IMPLEMENTATION</a></li>
+									<li><a href="/data">DATA</a></li>
+									<li><a href="/myths">MYTHS</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="navigation-dropdown__click">Segment</a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+									<li><a href="/hotel-property-management-software">Hotels</a></li>
+									<li><a href="/hostel-management-software">Hostels</a></li>
+									<li><a href="/restaurant-management-software">Restaurants</a></li>
+									<li><a href="/software-for-property-managers">Property Managers</a></li>
+									<li><a href="/country-club-management-software">Country Clubs</a></li>
+									<li><a href="/coworking-space-management-software">Coworking</a></li>
+									<li><a href="/storage-management">Self Storage</a></li>
+									<li><a href="/student-housing-property-management-software">Student Housing</a></li>
+									<li><a href="/parking-management-system">Parking Facilities</a></li>
+									<li><a href="/event-management-software">Events</a></li>
+									<li><a href="/senior-living-property-management-software">Senior Living</a></li>
+									<li><a href="/vacation-rental-property-management-software">Vacation Rentals</a></li>
+									<li><a href="/villas-property-management-software">Villas</a></li>
+									<li><a href="/government-property-management-software">Government</a></li>
+									<li><a href="/non-profit-property-management-software">Nonprofit</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="navigation-dropdown__click">RESOURCES</a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+
+									<li><a href="/tour">TOURS</a></li>
+									<li><a href="/customer-stories">STORIES</a></li>
+									<li><a href="/faqs">FAQS</a></li>
+									<li><a href="/channels">CHANNELS</a></li>
+									<li><a href="/webinars">WEBINARS</a></li>
+
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="navigation-dropdown__click">COMPANY</a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+									<li><a href="/about-us">ABOUT US</a></li>
+									<li><a href="/core-values">CORE VALUES</a></li>
+									<li><a href="/content">GALLERY</a></li>
+									<li><a href="/careers">CAREERS</a></li>
+									<li><a href="/reviews">REVIEWS</a></li>
+									<li><a href="/partners">PARTNERS</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="/pricing">PRICING</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/login">PORTAL</a></li>
+						<li class="navigation__lang">
+							<a class="navigation-dropdown__click"><img src="img/flag-en.png" alt="English" /><span>English</span></a>
+							<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+							<div class="navigation-dropdown">
+								<ul>
+									<li><a href="#"><img src="img/flag-en.png" alt="English" />English</a></li>
+									<li><a href="#"><img src="img/flag-es.png" alt="Espanol" />Espanol</a></li>
+								</ul>
+							</div>
+						</li>
+						
+					</ul>
+					<!-- CTA buttons in mobile menu -->
+					<div class="col-sm-auto buttons">
+						<a class="button desktop-button" href="/schedule-an-appointment">SCHEDULE A MEETING</a>
+						<a class="button mobile-button" href="tel:+19176002345">Call</a>
+						<a class="button"href="/14-day-free-trial">Take a Pilot</a>
+					</div>
+					<!-- // CTA buttons in mobile menu -->
+				</nav>
+			</div>
+			<div class="col-sm-auto buttons">
+				<a class="button" href="/schedule-an-appointment">SCHEDULE A MEETING</a>
+				<a class="button" href="/14-day-free-trial">Take a Pilot</a>
+			</div>
+		</div>	
+	</header>
+	<div class="navigation__overlay"></div>
+	<!--end-header-->
+	<!--main-->
+	<div class="main">
+		<!-- banner -->
+
+		<div class="landing__hero landing__hero-nonprofit">
+			<div class="container">
+				<h1>Focus on your good work…
+					<br />Let management handle itself</h1>
+				<div class="row">
+					<div class="col-lg-6 order-lg-1">
+						<div class="landing__hero-img wow bounceInRight"><img src="img/nonprofit-top-img.png" alt=""></div>
+					</div>
+					<div class="col-lg-6 wow fadeIn">
+						<article>
+							<h2>A simple, advanced management system for you</h2>
+							<p>Non-profit establishments do good work for the world, so why stress out and spend a lot on business and property management?</p>
+							<p>The Booking Ninjas system features a very unique approach to non-profit, combining the familiarities of conventional management with affordable digital innovations to make your work easier, faster, and far more productive.</p>
+							<a href="/14-day-free-trial" class="button landing__button">Let’s Go</a>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /banner -->
+		<!-- content -->
+		<div class="landing__box landing__box-nonprofit">
+			<div class="container">
+				<div class="text_center wow fadeIn">
+					<div class="row justify-content-center">
+						<div class="col-md-10">
+							<h3 class="title">Pricing considers your contributions</h3>
+							<p>You do a lot for the community, and we notice! Our unit-based pricing model considers your contributions and makes the cost-per-unit more affordable to match restrictive budgets.</p>
+							<a href="/pricing" class="button landing__button">See Pricing</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+		<!-- content -->
+		<div class="landing__box landing__box-nonprofit">
+			<div class="container">
+				<div class="wow fadeInUp">
+					<h3>PYou don’t have to add the stress of running a Non Profit with managing the properties. Booking Ninjas Property Management System’s Got you covered.</h3>
+					<div class="row justify-content-center align-items-center">
+						<div class="col-md-6">
+							<p>As a manager running an NGO, you have your hands full with registration, human management, fundraising, and other societal obligations, therefore adding property management to it may make things even harder. Managing the property and ensuring the rooms have the perfect inhabitant is not easy. Still, you’re expected to have a good knowledge of what’s going on in the building and know what rooms are occupied. Why not make things easier by opting for a Property Management System?</p>
+							<p>Property Management Systems for Non-Profit Establishments has everything you will need to help your front desk job and overall management. They are created specifically for all nonprofit organizations, societies, and clubs that have buildings and properties to maintain.</p>
+						</div>
+						<div class="col-md-6">
+							<img src="img/nonprofit-content-1.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+		<!-- content -->
+		<div class="landing__nonprofit-tags text_center">
+			<div class="container">
+				<div class="text_center wow fadeInUp" >
+					<h3>Features to get the most out of your nonprofit</h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-1.png" alt=""></i></div>
+							<h6>Total Onboarding</h6>
+							<p>Everyone in the building can be onboarded to the platform-from the senior managers, to the nurses, caregivers, volunteers, and the needy. You can create accounts based on position to determine the extent of access. In the end, everyone can access particular information, and log complaints when needed. 
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-2.png" alt=""></i></div>
+							<h6>Mobile Access</h6>
+							<p>Using Mobile Applications, the platform can be accessed. Therefore, making accessibility, giving, and receiving updates very easy. Using the phone or a system, changes can be made.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-3.png" alt=""></i></div>
+							<h6>Communication Media (SMS/Text/Email/Phone)</h6>
+							<p>Available on the software is a medium of communication. Text can be exchanged, discussions are held and inventory taken at any time. </p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-4.png" alt=""></i></div>
+							<h6>Maintenance Request Log and Tracker</h6>
+							<p>Another feature that comes with the Property Management Software is one that allows tenants to log complaints and have their requests attended to. In the case that you fixed someone in an inaccessible area which will affect their health, they can easily let you know. If services are needed as well, they can be requested and tracked to know when fulfilled.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-5.png" alt=""></i></div>
+							<h6>Rent Conditions</h6>
+							<p>The Property Management Software helps you to review rent conditions. Inhabitants in non-profit homes, may not have to pay rent, but what might pop up many times are questions on their health status, when they were admitted in, how long they are to stay, rent obligations they are expected to fulfill while there, and who can visit them, among other questions. On admittance, all of this information is filled in and can be gotten with a search when required.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-6.png" alt=""></i></div>
+							<h6>Graphical Report and Data Analysis Tools</h6>
+							<p>Another important feature necessary for presentation, and decision making made available is the Graphical Report and Data Analysis tools. For fundraising, end-of-the-year reports, or other formalities, you can derive charts and graphs to help you. How many blind people were taken in this year? How many cancer patients were supported? How long did the average homeless person stay when admitted? are all questions that your data analysis tools will help you with. </p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-7.png" alt=""></i></div>
+							<h6>Real-time Notification, Updates, and Reports</h6>
+							<p>As soon as a change is made, you get an immediate notification to that effect. This way, you can tell who was moved to another room, or what is going on at any time. You get notifications and updates when due and can answer questions in the case of an emergency. </p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-8.png" alt=""></i></div>
+							<h6>Storage</h6>
+							<p>The Property Management system also has a storage feature that allows you to keep crucial information in cloud storage for years. You can always access this information and use it in the future for decision making.</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+		<!-- content -->
+		<div class="landing__nonprofit-tags">
+			<div class="container">
+				<div class="text_center wow fadeInUp" >
+					<h3>Why You Need a Property Management System for your NGO</h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-9.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Total Onboarding</h6>
+								</div>
+							</div>
+							<p>Property Management Systems are created to cover the overall management of the establishment. You can get the full details and information you require at any time without hassle. You can predict when an occupant will leave and even tell their history at a glance. You know what rooms are empty and who can access or use it.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-10.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Inventory Management</h6>
+								</div>
+							</div>
+							<p>As a non-profit organization, you need to keep track of everyone accepted into the organization, their health condition, or their condition of acceptance into the organization. A property Management system is the perfect way to do that. You can understand each individual’s story and why they were accepted into the organization. You can find the perfect room for them by knowing what rooms are available and how accessible they are for people who may have physical limitations.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-11.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Ease</h6>
+								</div>
+							</div>
+							<p>Running an NGO is not the easiest task, but with a property management system, you bring a level of ease into your work. You deal with less paperwork and can access records from anywhere in the World.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="landing__nonprofit-tag wow fadeInUp">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-12.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Accountability</h6>
+								</div>
+							</div>
+							<p>Property Management Software helps you to increase your level of accountability. You receive updates that notify you when things happen and you can make decisions more easily.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-13.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Synchronization</h6>
+								</div>
+							</div>
+							<p>Everyone on the platform is connected. As a result, every update reaches everyone. Occupants and Managers are linked and can interact.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInLeft">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-14.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Faster Front Desk Services</h6>
+								</div>
+							</div>
+							<p>With Property Management Software, time spent at the front desk to check-in is reduced as every information needed can be filled in on the platform. Rooms are allocated faster based on conditions and health status. </p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="landing__nonprofit-tag wow fadeInRight">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<div class="landing__nonprofit-tag-icon"><i><img src="img/nonprofit-ico-15.png" alt=""></i></div>
+								</div>
+								<div class="col">
+									<h6>Multi-Property Management </h6>
+								</div>
+							</div>
+							<p>Does your organization have more than one building? You can board as many properties on the system as possible. One won’t interrupt the other, and you can manage it all with ease.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+		<!-- content -->
+		<div class="landing__box landing__box-nonprofit landing__checked wow fadeIn">
+			<div class="container">
+				<h3 class=" text_center">More Additionals Booking Ninjas can Offer You</h3>
+				<ul class="landing__checked-list">
+					<li>Customer Support</li>
+					<li>Reliable Technology</li>
+					<li>Additional Features Of Choice</li>
+					<li>Good ROI</li>
+					<li>Maintenance Services</li>
+					<li>Security</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /content -->
+		<!-- content -->
+		<div class="landing__box wow fadeInUp">
+			<div class="container">
+				<h3 class=" text_center">Easy way to get started with Booking Ninjas</h3>
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="landing__bottom" style="background-image: url(img/nonprofit-hand-bg.png);">
+							<div class="row align-items-center">
+								<div class="col-lg-3">
+									<div class="text_center"><img src="img/nonprofit-hand.png" alt=""></div>
+								</div>
+								<div class="col-lg-8">
+									<section>
+										<p>To get started on our implementation process, schedule a call with us. We can talk about the needs of your organization, and which features can be used to meet them.
+										</p>
+										<p>You can go straight ahead and try out a demo of our system. Use this <a href="/14-day-free-trial">link</a> to get your trial version of our system. Please note that you will be asked to add your card details in order to gain access.
+										</p>
+										<p>We are available to answer any questions you have. To send an email, you can reach us at <a href="mailto:sales@bookingninjas.com">sales@bookingninjas.com</a>.
+										</p>
+									</section>
+								</div>
+							</div>
+						</div>
+						<div class="text_center"><a href="/14-day-free-trial" class="button landing__button">Let’s Go</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+
+		<div class="landing__faq wow fadeInUp">
+			<div class="container">
+				<h3 class=" text_center">FAQs</h3>
+
+				<div class="landing__faq-item">
+					<div class="landing__faq-question">
+						What plans are available for your Property Management Software?
+						<div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+					</div>
+					<div class="landing__faq-answear">
+						<p>We offer highly adjustable pricing primarily depending on what features you want to be integrated. Our out-of-box features are mostly what you need to get fully started.
+							<br /><a href="/pricing">Visit this page</a> for more information on pricing.</p>
+					</div>
+				</div>
+				<!-- -->
+				<div class="landing__faq-item">
+					<div class="landing__faq-question">
+						What business types does your Property Management System support?
+						<div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+					</div>
+					<div class="landing__faq-answear">
+						<p>Basically any business in the industry. As long as you have real people as customers/guests, our system is for you. Our system is also critical for business-intensive operations such as Accounting, Payments Systems, Automation, and many more. <a href="/solutions-for-property-management">Go to our solutions page</a> for a full list.</p>
+					</div>
+				</div>
+				<!-- -->
+				<div class="landing__faq-item">
+					<div class="landing__faq-question">
+						What types of Property management software do you have? 
+						<div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+					</div>
+					<div class="landing__faq-answear">
+						<p>Our Salesforce-powered system entirely focuses on rapid and long-term benefits for the end-user. As the first Cloud-based Property Management System, we have been innovating in that field to ensure users have a good time managing their customers and properties.
+							So basically, our system is one that makes work easier for you. You can log in on any device, at any time, and have access to your data, as well as give out commands and whatever else you decide to manage with.</p>
+					</div>
+				</div>
+				<!-- -->
+				<div class="landing__faq-item">
+					<div class="landing__faq-question">
+						Can I board more than one building on software?
+						<div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+					</div>
+					<div class="landing__faq-answear">
+						<p>Of course. Our system is built for multiple property management.</p>
+					</div>
+				</div>
+				<!-- -->
+				<div class="landing__faq-item">
+					<div class="landing__faq-question">
+						Will your property management system handle marketing?
+						<div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+					</div>
+					<div class="landing__faq-answear">
+						<p>Yes. We are <a href="/integration-with-salesforce-platform">built on the Salesforce Platform</a>, which is the first marketing+management platform to ever be built. With the Booking Ninjas system, you have access to tools from the Salesforce AppExchange platform, where you will find the best marketing tools you’ve been hearing about. From Email Campaigns to personal touch, we’ve got you covered.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /content -->
+	</div>
+	<!--end-main-->
+	<!--footer-->
+	<footer class="footer">
+		<div class="footer__top">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-5">
+				<a href="/" class="logo"><img src="img/logo-footer.png" alt=""></a>
+				<address>
+				<p>
+					1815 Purdy Avenue  <br>
+					Miami Beach, FL 33139
+				</p>
+				<p><small> sales@bookingninjas.com</small></p>
+					<a href="tel:866212"> (866) 217 3210</a>
+				</address>
+			</div>
+			<div class="col-lg-7">
+				<div class="row">
+				<div class="col-lg-3">
+					<div class="footer__title">Company:</div>
+					<nav class="footer__list">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">SiteMap</a></li>
+					</ul>
+					</nav>
+				</div>
+				<div class="col-lg-12 order-lg-1">
+					<div class="footer__title">BOOKINGNINJAS</div>
+					<p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+				</div>
+				<div class="col-lg-9">
+					 <nav class="footer__social">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-salesforce"></i></a>
+					</nav>
+					<form class="footer__form">
+						<input type="email" placeholder="Enter your email">
+						<button class="button" type="submit">subscribe</button>
+					</form>
+					<p class="footer__form-text">We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div class="footer__bottom">
+		<div class="container">
+			<div class="row align-items-center">
+			<div class="col-md-6">All rights reserved © 2019 - Booking Ninjas</div>
+			<div class="col-md-6">
+				<nav class="payments">
+				<a href="#"><img src="img/visa.png" alt=""></a>
+				<a href="#"><img src="img/mc.png" alt=""></a>
+				<a href="#"><img src="img/ae.png" alt=""></a>
+				<a href="#"><img src="img/paypal.png" alt=""></a>
+				</nav>
+			</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+	<!--end-footer-->
+</div>
+		
+
+
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/slick.js"></script>
+<script src="js/wow.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
+
+</body>
+</html>

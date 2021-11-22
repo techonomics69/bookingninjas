@@ -1,0 +1,77 @@
+// old GDPR
+.gdpr-center{
+	padding: 40px 0;
+	background:#e0f5ff;
+	.title{
+		background: none;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&__list{
+		li{
+			background:#fff;
+			box-shadow: 0 0 5px #a3b2b9;
+			margin-bottom: 20px;
+			display: flex;
+			font-size: 18px;
+			color: #393939;
+		} 
+		section{
+			padding: 25px 15px; 
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__img{
+		background:#11b0fc;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 125px;
+		padding: 15px 0;
+	}
+}
+
+.gdpr-bottom{
+	padding: 50px 0;
+	background:url(../img/gdpr-bg.png) no-repeat center 30px;
+	p{
+		text-align: center;
+		color: #373737;
+		font-size: 18px;
+		padding-top: 45px;
+	}
+	.title{
+		&:after{
+			display: none;
+		}
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+.gdpr-bottom__block{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 90px;
+	figure{
+		max-width: 240px;
+	}
+	i{
+		display: block;
+		height: 140px;
+	}
+	span{
+		background:#11b0fc;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 6px;
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 2px;
+	}
+}
+// end old GDPR

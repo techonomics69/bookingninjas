@@ -1,0 +1,148 @@
+/*----------contacts----------*/
+.contacts_page {
+	background: #fafafa;
+	border-bottom: 1px solid #e8e8e8;
+	.container {
+		overflow: visible;
+	}
+}
+.contact_img {
+	float: left;
+	margin-left: -20px;
+	position: relative;
+	img {
+		display: block;
+	}
+}
+.contact_side {
+	overflow: hidden;
+	padding: 25px 0 0 0;
+	width: 520px;
+	float: left;
+}
+.contact_top {
+	overflow: hidden;
+	padding-bottom: 20px;
+	.title {
+		font-weight: 500;
+		text-transform: uppercase;
+		float: left;
+		padding-bottom: 0;
+		&:after {
+			margin: 15px 0 0 0;
+		}
+		background: none;
+	}
+	.contact_txt {
+		float: right;
+		width: 220px;
+		text-align: right;
+		.tel {
+			font-size: 25px;
+			color: #53545e;
+			display: block;
+			text-decoration: none;
+		}
+		.email {
+			font-size: 16px;
+			color: #009ddc;
+			display: block;
+			font-weight: 300;
+			text-decoration: none;
+		}
+	}
+}
+.contact_form {
+	div {
+		margin-bottom: 10px;
+		padding-left: 1%;
+	}
+	input,
+	textarea,
+	select {
+		width: 98%;
+		height: 50px;
+		border: none;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.27);
+		box-sizing: border-box;
+		font-size: 16px;
+		font-weight: 300;
+		color: #999999;
+		padding: 0 15px;
+		&.small {
+			width: 48%;
+			&:first-child {
+				margin-right: 1.3%;
+			}
+		}
+	}
+	small {
+		display: block;
+		color: #636363;
+		font-size: 14px;
+		font-weight: 300;
+		padding-bottom: 17px;
+	}
+	textarea {
+		padding: 13px 15px;
+		height: 120px;
+	}
+	label {
+		color: #464646;
+		font-size: 16px;
+		font-weight: 300;
+		&:first-of-type {
+			padding: 0 47px 0 0;
+		}
+		input,
+		select {
+			width: 76px;
+			margin-left: 17px;
+		}
+	}
+	input.button {
+		margin-top: 15px;
+		color: #fff;
+		box-shadow: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 300;
+		background: #20a9df;
+		width: 215px;
+		border-radius: 25px;
+		&:hover {
+			background: #0f91c4;
+		}
+	}
+}
+
+.advantage_wrap {
+	padding: 44px 0;
+	.title {
+		background: none;
+		margin-bottom: 0;
+	}
+}
+.advantage_block {
+	padding: 0 0 10px 0;
+	display: flex;
+	justify-content: space-between;
+	figure {
+		padding-bottom: 30px;
+		display: inline-block;
+		vertical-align: top;
+		width: 250px;
+		overflow: hidden;
+		color: #53545e;
+		font-size: 14px;
+		figcaption {
+			overflow: hidden;
+			font-weight: 300;
+		}
+		img {
+			float: left;
+			padding: 0 20px 0 0;
+		}
+	}
+}
+/*----------end contacts----------*/

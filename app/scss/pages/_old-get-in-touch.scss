@@ -1,0 +1,133 @@
+.get-in-touch{
+	background: url(../img/map-bg.png) no-repeat top center;
+	margin-bottom: 169px;
+	&__text{
+		margin-bottom: 60px;
+		padding-top: 120px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 2;
+		font-weight: 300;
+		h2{
+			font-size: 36px;
+			font-weight: 600;
+			line-height: 2;
+		}
+	}
+	&__section{
+		background: #fff;
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+		display: flex;
+		justify-content: space-between;
+		h4{
+			color: #3b3b3b;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 36px;
+			letter-spacing: 1.5px;
+			padding-bottom: 34px;
+		}
+	}
+	&__form{
+		padding: 40px;
+		position: relative;
+		width: 640px;
+		label{
+			display: block;
+			color: #a9a9a9;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 24px;
+			letter-spacing: 0.9px;
+		}
+		input, textarea{
+			border-top: none;
+			box-shadow: none;
+			height: 35px;
+			margin-bottom: 35px;
+			font-size: 18px;
+			color: #000;
+			font-weight: 700;
+			letter-spacing: 0.9px;
+			padding-left: 0;
+			width: 100%;
+			&:focus{
+				box-shadow: none;
+			}
+		}
+		textarea{
+			width: 100%;
+			height: 105px;
+		}
+		.row{
+			position: relative;
+		}
+	}
+	&__button{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		button{
+			border-radius: 50%;
+			width: 62px;
+			height: 62px;
+			font-size: 35px;
+			background: #349ceb;
+			border: none;
+			@include transition(all 0.5s);
+			padding: 0;
+			text-align: center;
+			&:hover{
+				background: #1a7493;
+			}
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+			position: relative;
+			left: -5px;
+		}
+	}
+	&__info{
+		background: #1a7493;
+		width: 450px;
+		box-sizing: border-box;
+		padding: 40px;
+		h4{
+			color: #fff;
+		}
+		p{
+			color: #ffffff;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 1;
+			letter-spacing: 1px;
+			position: relative;
+			padding: 0 0 40px 50px;
+			strong{
+				font-size: 36px;
+				font-weight: 300;
+			}
+			img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		nav{
+			position: relative;
+			color: #fff;
+			padding-top: 80px;
+			a{
+				display: inline-block;
+				padding-right: 40px;
+				opacity: 0.62;
+				font-size: 30px;
+				@include transition(all 0.5s);
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

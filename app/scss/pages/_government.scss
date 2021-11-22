@@ -1,0 +1,397 @@
+ul.diamond-markers {
+	padding-left: 40px;
+	li {
+		padding-bottom: 30px;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			display: block;
+			width: 18px;
+			height: 18px;
+			left: -36px;
+			top: 6px;
+			background-color: #fbcd04;
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+	}
+}
+.government-page-top {
+	height: auto;
+	background: none;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: linear-gradient(73deg, transparent 52%, #68d8c4 0);
+	@include mq($max-width: 992px) {
+		background: #fff;
+	}
+	@include mq($max-width: 768px) {
+		padding-bottom: 0;
+	}
+	&:before,
+	&:after {
+		display: none;
+	}
+	h1 {
+		padding-top: 25px;
+		color: #303030;
+		font-weight: 700;
+		@include mq($max-width: 768px) {
+			padding-top: 25px;
+			font-size: 28px;
+		}
+	}
+	h2 {
+		font-size: 22px;
+		font-weight: 400;
+		line-height: normal;
+		color: #303030;
+		padding-bottom: 30px;
+	}
+	h1:after {
+		display: none;
+	}
+	p {
+		color: #303030;
+		line-height: 1.33;
+		letter-spacing: 0.9px;
+		padding-bottom: 30px;
+	}
+}
+.government-kinds {
+	padding-top: 110px;
+	@include mq($max-width: 992px) {
+		padding-top: 20px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 1.8px;
+		color: #303030;
+		padding-bottom: 32px;
+		@include mq($max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.33;
+		letter-spacing: 0.9px;
+		color: #303030;
+	}
+}
+.government-software {
+	padding-top: 90px;
+	text-align: center;
+	@include mq($max-width: 768px) {
+		padding-top: 50px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 1.8px;
+		color: #303030;
+		padding-bottom: 28px;
+		@include mq($max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.33;
+		letter-spacing: 0.9px;
+		color: #303030;
+	}
+	&__items-wrapper {
+		padding-top: 46px;
+		.item-padding {
+			padding-bottom: 26px;
+		}
+
+	}
+	&__item {
+		padding: 18px 35px;
+		height: 100%;
+		box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+		background-color: #fff;
+		figure {
+			padding-bottom: 18px;
+		}
+		h4 {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			color: #252525;
+			padding-bottom: 12px;
+		}
+		p {
+			font-size: 16px;
+			font-weight: 100;
+			line-height: 1.25;
+			letter-spacing: 0.16px;
+			color: #000000;
+		}
+	}
+}
+.government-facilities {
+	padding-top: 35px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.67;
+	letter-spacing: 0.9px;
+	color: #303030;
+	@include mq($max-width: 768px) {
+		padding-top: 20px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 1.8px;
+		text-align: center;
+		padding-bottom: 50px;
+		@include mq($max-width: 768px) {
+			font-size: 24px;
+			padding-bottom: 30px;
+		}
+	}
+	p {
+		padding-bottom: 30px;
+	}
+	&__integrations {
+		padding: 34px 50px 2px 36px;
+		border-radius: 6px;
+		background-color: #f5f5f5;
+		@include mq($max-width: 768px) {
+			padding: 30px 20px 2px;
+		}
+		&-item {
+			padding: 30px 20px 0 32px;
+			margin-bottom: 27px;
+			box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05);
+			background-color: #fff;
+			border-radius: 3px;
+			color: #202020;
+			p {
+				padding-bottom: 26px;
+			}
+			figure {
+				padding-top: 7px;
+				padding-bottom: 18px;
+				@include mq($max-width: 768px) {
+					text-align: center;
+					padding-top: 0;
+				}
+			}
+		}
+	}
+	&__benefits {
+		padding-top: 60px;
+		padding-bottom: 20px;
+		@include mq($max-width: 768px) {
+			padding-top: 30px;
+		}
+		ul {
+			li {
+				font-weight: 500;
+				padding-bottom: 18px;
+				&:before {
+					width: 13px;
+					height: 13px;
+					left: -28px;
+				}
+			}
+		}
+	}
+	&__features {
+		padding: 40px 30px 4px 38px;
+		border-radius: 6px;
+		background-color: #f5f5f5;
+		@include mq($max-width: 768px) {
+			padding: 25px 20px 2px;
+		}
+		&-item {
+			margin-bottom: 27px;
+			padding-right: 20px;
+			color: #202020;
+			@include mq($max-width: 768px) {
+				padding-right: 0;
+			}
+			p {
+				padding: 23px 28px;
+				border-radius: 5px;
+				box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05);
+				background-color: #fff;
+			}
+			span {
+				position: relative;
+				display: block;
+				width: 84px;
+				height: 84px;
+				z-index: 1;
+				font-size: 28px;
+				font-weight: 500;
+				line-height: 84px;
+				text-align: center;
+				color: #fff;
+				@include mq($max-width: 768px) {
+					display: none;
+				}
+				&:before {
+					position: absolute;
+					display: block;
+					content: '';
+					width: 50px;
+					height: 50px;
+					background-color: #fbcd04;
+					border-radius: 50%;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					z-index: -1;
+					margin: auto;
+				}
+				&:after {
+					position: absolute;
+					display: block;
+					content: '';
+					width: 84px;
+					height: 84px;
+					opacity: 0.28;
+					background-color: #fbcd04;
+					border-radius: 50%;
+					z-index: -2;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+		}
+	}
+	&__estate {
+		padding-top: 88px;
+		@include mq($max-width: 768px) {
+			padding-top: 50px;
+		}
+	}
+}
+.government-about {
+	padding-bottom: 215px;
+	font-size: 18px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: 0.9px;
+	color: #303030;
+	background: url("../img/government-about-bg.png") no-repeat;
+	background-size: contain;
+	background-position: bottom;
+	@include mq($max-width: 768px) {
+		padding-bottom: 60px;
+	}
+	h3 {
+		font-size: 36px;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: 1.8px;
+		color: #303030;
+		padding-bottom: 32px;
+		@include mq($max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	&__cards {
+		padding-top: 55px;
+		padding-bottom: 150px;
+		@include mq($max-width: 768px) {
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		&-item {
+			margin: 0px 6px;
+			padding: 27px 18px 20px;
+			height: 100%;
+			text-align: center;
+			box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+			background-color: #ffffff;
+			@include mq($max-width: 992px) {
+				margin: 0;
+			}
+			figure {
+				text-align: center;
+				img {
+					padding-bottom: 10px;
+				}
+				figcaption {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 1.2;
+					letter-spacing: 0.7px;
+					color: #252525;
+					padding-bottom: 19px;
+				}
+			}
+			p {
+				font-size: 16px;
+				font-weight: 100;
+				line-height: 1.25;
+				letter-spacing: 0.16px;
+				color: #000;
+			}
+		}
+	}
+	.item-padding {
+		padding-bottom: 26px;
+	}
+	&__offer-item {
+		padding-bottom: 38px;
+		padding-left: 87px;
+		position: relative;
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 51px;
+			height: 51px;
+			background-color: #fde168;
+			border-radius: 50%;
+			left: 10px;
+			top: 10px;
+			z-index: -1;
+		}
+		&:after {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 71px;
+			height: 71px;
+			background-color: #fef5cd;
+			border-radius: 50%;
+			z-index: -2;
+			left: 0;
+			top: 0;
+		}
+		p {
+			line-height: 1.33;
+		}
+		h5 {
+			font-size: 24px;
+			font-weight: 500;
+			letter-spacing: 1.2px;
+			padding-bottom: 20px;
+		}
+	}
+}

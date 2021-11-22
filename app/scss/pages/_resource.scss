@@ -1,0 +1,128 @@
+.resource-top{
+  @extend .why-top;
+  height: 270px;
+  h1{
+    color: #2e3949;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  @include mq($max-width: 992px) {
+    height: auto;
+    text-align: center;
+  }
+}
+.resource-center{
+  @extend .why-page-content;
+  padding: 95px 0 55px 0;
+  color: #111111;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  @include mq($max-width: 992px) {
+    padding: 40px 0;
+    font-size: 16px;
+  }
+  &__tabs-links{
+    padding-top: 30px;
+    @include mq($max-width: 767px) {
+      overflow-x: auto;
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      padding-bottom: 40px;
+      @include mq($max-width: 992px) {
+        font-size: 16px;
+      }
+      @include mq($max-width: 767px) {
+        width: auto;
+        justify-content: flex-start;
+      }
+      li{
+        padding: 0 15px;
+        @include mq($max-width: 992px) {
+          padding: 0 5px;
+        }
+      }
+      a{
+        display: block;
+        height: 100%;
+        padding: 15px 22px;
+        color: #000;
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background-color: #f9f9f9;
+        @include transition(all 0.5s);
+        &.active, &:hover{
+          background-color: #fbcd04;
+        }
+        @include mq($max-width: 992px) {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  &__tabs{
+    padding-bottom: 40px;
+    .col-lg-4{
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+  }
+  &__tabs-item{
+    display: block;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+      display: block;
+    }
+    span{
+      background: #fbcd04;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      @include transition(all 0.5s);
+      &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        @include arr(33,38, #000, r);
+      }
+    }
+    &:hover{
+      span{
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  &__more{
+    a{
+      display: block;
+      color: #252525;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 25px;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      background-color: #f9f9f9;
+      text-transform: uppercase;
+      text-decoration: none;
+      @include transition(all 0.5s);
+      &:hover{
+        background: #e8e8e8;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+/*-------------------services------------------*/
+.services{
+	&__top{
+		color: #3c3c3c;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 28px;
+		letter-spacing: 1px;
+		.container{
+			padding: 60px 0 0 0;
+			box-sizing: border-box;
+			height: 483px;
+			background: url(../img/services-top-bg.jpg) no-repeat bottom right;
+		}
+		h2{
+			color: #1c98c3;
+			font-size: 36px;
+			font-weight: 300;
+			padding-bottom: 30px;
+		}
+	}
+	&__list{
+		color: #3c3c3c;
+		font-size: 18px;
+		font-weight: 300;
+		padding-top: 40px;
+		line-height: 28px;
+		background: url(../img/line-services.png) repeat-y center top;
+		background-size:  74px 100%;
+		h6{
+			color: #000000;
+			font-size: 26px;
+			letter-spacing: 1.3px;
+		}
+	}
+	&__list-item{
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 100px;
+		figure{
+			padding-right: 30px;
+			min-width: 300px;
+			img{
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+	&__list-item-right{
+		padding-top: 70px;
+		padding-left: 20px;
+		figure{
+			order: 1;
+			padding-right: 0;
+			padding-left: 30px;
+		}
+	}
+}

@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="initial-scale=1" />
+	<title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!--End Favicon-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link href="css/screen.css" rel="stylesheet" media="screen">
+	<!--endbuild-->
+</head>
+
+<body>
+
+	<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PQ4V7BZ" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+
+	<div class="wrapper">
+		<!--header-->
+		<header class="header">	
+			<div class="row align-items-center justify-content-between">
+				<div class="col col-xl-auto logo-wrap">
+					<a class="logo" href="/"><img alt="Booking Ninjas Logo" src="img/logo.png" /></a>
+				</div>
+				<!-- CTA buttons -->
+				<div class="col-auto cta-buttons order-xl-last">
+					<a class="button desktop-button" href="/schedule-an-appointment">SCHEDULE A СALL</a>
+					<a class="button mobile-button" href="tel:+19176002345">Call</a>
+					<!-- <a class="button desktop-button"href="/14-day-free-trial">Take a Pilot</a> -->
+				</div>
+				<!-- // CTA buttons -->
+				<div class="col-auto col-xl">
+					<button class="navigation__button"><i class="fas fa-bars"></i></button>
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a class="navigation-dropdown__click">GETTING STARTED</a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+										<li><a href="/solutions">SOLUTIONS</a></li>
+										<li><a href="/advantages">ADVANTAGES</a></li>
+										<li><a href="/why-booking-ninjas">WHY BOOKINGNINJAS?</a></li>
+										<li><a href="/pricing">PRICING</a></li>
+										<li><a href="/gdpr">GDPR</a></li>
+										<li><a href="/industrial-revolution">INDUSTRIAL REVOLUTION</a></li>
+										<li><a href="/artificial-intelligence">ARTIFICIAL INTELLIGENCE</a></li>
+										<li><a href="/competitive-matrix">COMPETITIVE MATRIX</a></li>
+										<li><a href="/glance">GLANCE</a></li>
+										<li><a href="/pms">PMS</a></li>
+										<li><a href="/pms-built-on-salesforce">PMS ON SALESFORCE</a></li>
+										<li><a href="/best-hotel-pms">HOTEL PMS</a></li>
+										<li><a href="/consultation">CONSULT</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="navigation-dropdown__click">HOW IT WORKS</a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+										<li><a href="/buying-process">PROCESS</a></li>
+										<li><a href="/integrations">INTEGRATIONS</a></li>
+										<li><a href="/implementation">IMPLEMENTATION</a></li>
+										<li><a href="/data">DATA</a></li>
+										<li><a href="/myths">MYTHS</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="navigation-dropdown__click">Segment</a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+										<li><a href="/hotel-property-management-software">Hotels</a></li>
+										<li><a href="/hostel-management-software">Hostels</a></li>
+										<li><a href="/restaurant-management-software">Restaurants</a></li>
+										<li><a href="/software-for-property-managers">Property Managers</a></li>
+										<li><a href="/country-club-management-software">Country Clubs</a></li>
+										<li><a href="/coworking-space-management-software">Coworking</a></li>
+										<li><a href="/storage-management">Self Storage</a></li>
+										<li><a href="/student-housing-property-management-software">Student Housing</a></li>
+										<li><a href="/parking-management-system">Parking Facilities</a></li>
+										<li><a href="/event-management-software">Events</a></li>
+										<li><a href="/senior-living-property-management-software">Senior Living</a></li>
+										<li><a href="/vacation-rental-property-management-software">Vacation Rentals</a></li>
+										<li><a href="/villas-property-management-software">Villas</a></li>
+										<li><a href="/government-property-management-software">Government</a></li>
+										<li><a href="/non-profit-property-management-software">Nonprofit</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="navigation-dropdown__click">RESOURCES</a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+
+										<li><a href="/tour">TOURS</a></li>
+										<li><a href="/customer-stories">STORIES</a></li>
+										<li><a href="/faqs">FAQS</a></li>
+										<li><a href="/channels">CHANNELS</a></li>
+										<li><a href="/webinars">WEBINARS</a></li>
+
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="navigation-dropdown__click">COMPANY</a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+										<li><a href="/about-us">ABOUT US</a></li>
+										<li><a href="/core-values">CORE VALUES</a></li>
+										<li><a href="/content">GALLERY</a></li>
+										<li><a href="/careers">CAREERS</a></li>
+										<li><a href="/reviews">REVIEWS</a></li>
+										<li><a href="/partners">PARTNERS</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="/pricing">PRICING</a></li>
+							<li><a href="/blog">BLOG</a></li>
+							<li><a href="/login">PORTAL</a></li>
+							<li class="navigation__lang">
+								<a class="navigation-dropdown__click"><img src="img/flag-en.png" alt="English" /><span>English</span></a>
+								<span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+								<div class="navigation-dropdown">
+									<ul>
+										<li><a href="#"><img src="img/flag-en.png" alt="English" />English</a></li>
+										<li><a href="#"><img src="img/flag-es.png" alt="Espanol" />Espanol</a></li>
+									</ul>
+								</div>
+							</li>
+							
+						</ul>
+						<!-- CTA buttons in mobile menu -->
+						<div class="col-sm-auto buttons">
+							<a class="button desktop-button" href="/schedule-an-appointment">SCHEDULE A CALL</a>
+							<a class="button desktop-button"href="/14-day-free-trial">Take a Pilot</a>
+						</div>
+						<!-- // CTA buttons in mobile menu -->
+					</nav>
+				</div>
+			</div>	
+		</header>
+		<div class="navigation__overlay"></div>
+		<!--end-header-->
+		<!--main-->
+		<main class="main">
+			<div class="pricing-hero">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-2 align-self-center align-self-lg-start order-md-1">
+							<img src="img/pricing-hero-img.png" alt="Booking Ninjas Property Management Software Cost" class="pricing-hero-img">
+						</div>
+						<div class="col-12 col-md-8 col-lg-10">
+							<h1>
+								Booking Ninjas Property Management <span class="color-blue">Software Cost</span>
+							</h1>
+							<h2>All-In-One PMS Designed To Grow With Your Business</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-10">
+							<!-- Company size selector -->
+							<div id="pricing-plans"></div>
+							<ul class="pricing-size">
+								<li class="pricing-size__item active" data-slide="1">
+									<i class="pricing-size__icon"></i>
+									<p>
+										<span>Extra Small</span>
+										5-50 units
+									</p>
+								</li>
+								<li class="pricing-size__item" data-slide="2">
+									<i class="pricing-size__icon"></i>
+									<p>
+										<span>Small</span>
+										50-100 units
+									</p>
+								</li>
+								<li class="pricing-size__item" data-slide="3">
+									<i class="pricing-size__icon"></i>
+									<p>
+										<span>Medium</span>
+										100-500 units
+									</p>
+								</li>
+								<li class="pricing-size__item" data-slide="4">
+									<i class="pricing-size__icon"></i>
+									<p>
+										<span>Large</span>
+										500-2000 units
+									</p>
+								</li>
+								<li class="pricing-size__item" data-slide="5">
+									<i class="pricing-size__icon"></i>
+									<p>
+										<span>Enterprise</span>
+										2000+ units
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-plans">
+				<div class="container">
+					<!-- Pricing filter -->
+					<div class="pricing-filter row align-items-end justify-content-center">
+						<div class="col-12 col-md">
+							<ul class="pricing-filter__period-tab">
+								<li class="active">Monthly</li>
+								<li>Annualy</li>
+							</ul>
+						</div>
+						<div class="col-auto">
+							<div class="pricing-filter__currency">
+								<figure class="active">
+									<figcaption>Dollar</figcaption>
+									<b>$</b>
+								</figure>
+								<figure>
+									<figcaption>Euro</figcaption>
+									<b>&euro;	</b>
+								</figure>
+								<!-- <figure>
+									<figcaption>Pound
+										Sterling</figcaption>
+									<b>&pound;	</b>
+								</figure> -->
+								<figure>
+									<figcaption>Brazilian
+										Real</figcaption>
+									<b>&#82;&#36;	</b>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<!-- /Pricing filter -->
+					<!-- Pricing Slider -->
+					<div class="pricing-slider">
+						<div class="pricing-slider__slide">
+							<div class="pricing-slider__slide-container">
+								<div class="pricing-slider__slide-name">
+									<p class="uppercase">Extra Small</p>
+									<p>(5-50 units)</p>
+								</div>
+								<div class="pricing-slider__slide-amount">
+									<div class="d-flex justify-content-center">
+										<span class="pricing-slider__slide-price">$125</span>
+										<span class="pricing-slider__slide-period">per</br>month</span>
+									</div>
+									<div class="pricing-slider__slide-fee">
+										<i>+</i>
+										<p>One-Time Implementation Fee </p>
+										<big>$500</big>
+									</div>
+									<a href="#" class="button-orange">Start NOW</a>
+									<p class="pricing-slider__slide-deposit">Start with <big>30%</big> deposit of the implementation fee</p>
+								</div>
+								<div class="pricing-slider__slide-list">
+									<p>
+										Get Full Access To Our </br> Core Features
+										<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="img/icons/lamp-icon.png"></a>
+									</p>
+									<ul>
+										<li>
+											<span>Guest Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Gain full control of managing your guests by leveraging our mobile and desktop app.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reservation Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save up on operational costs by digitizing your reservation calendar for real-time online booking.</span>
+											</div>
+										</li>
+										<li>
+											<span>Housekeeping Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</span>
+											</div>
+										</li>
+										<li>
+											<span>User Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</span>
+											</div>
+										</li>
+										<li>
+											<span>Inventory Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</span>
+											</div>
+										</li>
+										<li>
+											<span>Availability Hour Grid</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text"> Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</span>
+											</div>
+										</li>
+										<li>
+											<span>Invoicing + Payment API</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reporting</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</span>
+											</div>
+										</li>
+										<li>
+											<span>Mobile Apps</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</span>
+											</div>
+										</li>
+										<li>
+											<span>Add-On Features*</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-slider__slide">
+							<div class="pricing-slider__slide-container">
+								<div class="pricing-slider__slide-name">
+									<p class="uppercase">Small</p>
+									<p>(50-100 units)</p>
+								</div>
+								<div class="pricing-slider__slide-amount">
+									<div class="d-flex justify-content-center">
+										<span class="pricing-slider__slide-price">$250</span>
+										<span class="pricing-slider__slide-period">per</br>month</span>
+									</div>
+									<div class="pricing-slider__slide-fee">
+										<i>+</i>
+										<p>One-Time Implementation Fee </p>
+										<big>$2 000</big>
+									</div>
+									<a href="#" class="button-orange">Start NOW</a>
+									<p class="pricing-slider__slide-deposit">Start with <big>30%</big> deposit of the implementation fee</p>
+								</div>
+								<div class="pricing-slider__slide-list">
+									<p>
+										Get Full Access To Our </br> Core Features
+										<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="img/icons/lamp-icon.png"></a>
+									</p>
+									<ul>
+										<li>
+											<span>Guest Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Gain full control of managing your guests by leveraging our mobile and desktop app.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reservation Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save up on operational costs by digitizing your reservation calendar for real-time online booking.</span>
+											</div>
+										</li>
+										<li>
+											<span>Housekeeping Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</span>
+											</div>
+										</li>
+										<li>
+											<span>User Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</span>
+											</div>
+										</li>
+										<li>
+											<span>Inventory Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</span>
+											</div>
+										</li>
+										<li>
+											<span>Availability Hour Grid</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text"> Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</span>
+											</div>
+										</li>
+										<li>
+											<span>Invoicing + Payment API</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reporting</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</span>
+											</div>
+										</li>
+										<li>
+											<span>Mobile Apps</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</span>
+											</div>
+										</li>
+										<li>
+											<span>Add-On Features*</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-slider__slide">
+							<div class="pricing-slider__slide-container">
+								<div class="pricing-slider__slide-name">
+									<p class="uppercase">Medium</p>
+									<p>(100 - 500 units)</p>
+								</div>
+								<div class="pricing-slider__slide-amount">
+									<div class="d-flex justify-content-center">
+										<span class="pricing-slider__slide-price">$450</span>
+										<span class="pricing-slider__slide-period">per</br>month</span>
+									</div>
+									<div class="pricing-slider__slide-fee">
+										<i>+</i>
+										<p>One-Time Implementation Fee </p>
+										<big>$4 000</big>
+									</div>
+									<a href="#" class="button-orange">Start NOW</a>
+									<p class="pricing-slider__slide-deposit">Start with <big>30%</big> deposit of the implementation fee</p>
+								</div>
+								<div class="pricing-slider__slide-list">
+									<p>
+										Get Full Access To Our </br> Core Features
+										<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="img/icons/lamp-icon.png"></a>
+									</p>
+									<ul>
+										<li>
+											<span>Guest Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Gain full control of managing your guests by leveraging our mobile and desktop app.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reservation Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save up on operational costs by digitizing your reservation calendar for real-time online booking.</span>
+											</div>
+										</li>
+										<li>
+											<span>Housekeeping Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</span>
+											</div>
+										</li>
+										<li>
+											<span>User Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</span>
+											</div>
+										</li>
+										<li>
+											<span>Inventory Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</span>
+											</div>
+										</li>
+										<li>
+											<span>Availability Hour Grid</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text"> Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</span>
+											</div>
+										</li>
+										<li>
+											<span>Invoicing + Payment API</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reporting</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</span>
+											</div>
+										</li>
+										<li>
+											<span>Mobile Apps</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</span>
+											</div>
+										</li>
+										<li>
+											<span>Add-On Features*</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-slider__slide">
+							<div class="pricing-slider__slide-container">
+								<div class="pricing-slider__slide-name">
+									<p class="uppercase">LARGE</p>
+									<p>(500 - 2000 units)</p>
+								</div>
+								<div class="pricing-slider__slide-amount">
+									<div class="d-flex justify-content-center">
+										<span class="pricing-slider__slide-price">$650</span>
+										<span class="pricing-slider__slide-period">per</br>month</span>
+									</div>
+									<div class="pricing-slider__slide-fee">
+										<i>+</i>
+										<p>One-Time Implementation Fee </p>
+										<big>$8 000</big>
+									</div>
+									<a href="#" class="button-orange">Start NOW</a>
+									<p class="pricing-slider__slide-deposit">Start with <big>30%</big> deposit of the implementation fee</p>
+								</div>
+								<div class="pricing-slider__slide-list">
+									<p>
+										Get Full Access To Our </br> Core Features
+										<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="img/icons/lamp-icon.png"></a>
+									</p>
+									<ul>
+										<li>
+											<span>Guest Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Gain full control of managing your guests by leveraging our mobile and desktop app.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reservation Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save up on operational costs by digitizing your reservation calendar for real-time online booking.</span>
+											</div>
+										</li>
+										<li>
+											<span>Housekeeping Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</span>
+											</div>
+										</li>
+										<li>
+											<span>User Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</span>
+											</div>
+										</li>
+										<li>
+											<span>Inventory Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</span>
+											</div>
+										</li>
+										<li>
+											<span>Availability Hour Grid</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text"> Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</span>
+											</div>
+										</li>
+										<li>
+											<span>Invoicing + Payment API</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reporting</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</span>
+											</div>
+										</li>
+										<li>
+											<span>Mobile Apps</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</span>
+											</div>
+										</li>
+										<li>
+											<span>Add-On Features*</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-slider__slide">
+							<div class="pricing-slider__slide-container">
+								<div class="pricing-slider__slide-name">
+									<p class="uppercase">Enterprise</p>
+									<p>(2000+ units)</p>
+								</div>
+								<div class="pricing-slider__slide-amount">
+									<div class="d-flex justify-content-center">
+										<span class="pricing-slider__slide-price">$1000</span>
+										<span class="pricing-slider__slide-period">per</br>month</span>
+									</div>
+									<div class="pricing-slider__slide-fee">
+										<i>+</i>
+										<p>One-Time Implementation Fee </p>
+										<big>$15 000</big>
+									</div>
+									<a href="#" class="button-orange">Start NOW</a>
+									<p class="pricing-slider__slide-deposit">Start with <big>30%</big> deposit of the implementation fee</p>
+								</div>
+								<div class="pricing-slider__slide-list">
+									<p>
+										Get Full Access To Our </br> Core Features
+										<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="img/icons/lamp-icon.png"></a>
+									</p>
+									<ul>
+										<li>
+											<span>Guest Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Gain full control of managing your guests by leveraging our mobile and desktop app.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reservation Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save up on operational costs by digitizing your reservation calendar for real-time online booking.</span>
+											</div>
+										</li>
+										<li>
+											<span>Housekeeping Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</span>
+											</div>
+										</li>
+										<li>
+											<span>User Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</span>
+											</div>
+										</li>
+										<li>
+											<span>Inventory Management</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</span>
+											</div>
+										</li>
+										<li>
+											<span>Availability Hour Grid</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text"> Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</span>
+											</div>
+										</li>
+										<li>
+											<span>Invoicing + Payment API</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</span>
+											</div>
+										</li>
+										<li>
+											<span>Reporting</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</span>
+											</div>
+										</li>
+										<li>
+											<span>Mobile Apps</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</span>
+											</div>
+										</li>
+										<li>
+											<span>Add-On Features*</span>
+											<div class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="img/icons/list-tooltip-icon.png"></div>
+												<span class="list-tooltip-text">Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pricing Slider -->
+				</div>
+			</div>
+			<div class="homepage awards">
+				<div class="container">
+					<h2>We are recognized by</h2>
+					<div class="row justify-content-around">
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="img/award-1.png">
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="img/award-2.png">
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="img/award-3.png">
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="img/award-4.png">
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="img/award-5.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-support pricing-section">
+				<div class="container">
+					<h2 class="text_center">
+						<span class="color-blue">Training</span> & Support
+					</h2>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="img/icons/pricing-tag-1.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Onboarding Calls</h3>
+									<p>To ensure a smooth and seamless transition into our PMS, we have curated a quick onboarding process for you through onboarding calls and how-to guides. Our support calls are always available even after your onboarding process.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="img/icons/pricing-tag-2.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Data Migration</h3>
+									<p>We move all your data, applications and all important business elements from your current on-premise data center to the cloud. This process reduces media and storage costs with significant improvements in ROI and so much more.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="img/icons/pricing-tag-3.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Requirement Analysis</h3>
+									<p>We work with you to identify and categorize your PMS system needs and requirements. This process ensures we have a shared vision and lays a foundation of progress for our collaboration.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="img/icons/pricing-tag-4.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Other Customizations</h3>
+									<p>Need some extra customization that’s not yet included in your package? No worries. Once you let our support team know, we’re equipped with all the latest technology we need to create an even more customized instance for you.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text_center pricing-support__btn wow fadeIn">
+						<a href="#pricing-plans" class="button-orange">Get Started</a>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-addons pricing-section">
+				<div class="container">
+					<h2 class="text_center">
+						Add-on <span class="color-blue">Feature</span>
+					</h2>
+					<!-- Slider -->
+					<div class="pricing-addons__slider">
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-be.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Booking Engine</h3>
+								<p class="pricing-addons__slide-text">Maximize reservations and provide a simple booking process to your customers. Customized to suit your property flow with full website migration on Salesforce Lightning as well as built-in SEO optimization features.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-channel-manager.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Channel Manager</h3>
+								<p class="pricing-addons__slide-text">List and manage your inventory on a variety of booking channels and OTAs. Always stay automatically updated on the availability of your properties and services.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-data-analytics.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Data Analytics</h3>
+								<p class="pricing-addons__slide-text">Collect and interpret meaningful patterns in data with advanced Salesforce Lightning technology.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-pos.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">POS</h3>
+								<p class="pricing-addons__slide-text">Manage all your financial interactions in one central unit. Our POS system allows your business to accept payments from customers and keep track of sales effortlessly.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-cash-register.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Cash Register</h3>
+								<p class="pricing-addons__slide-text">Transact sales from different POS terminals and run your business in the cloud from any device.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-portal.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Portal</h3>
+								<p class="pricing-addons__slide-text">Provide single access points to a select group whether employees, guests, or exclusive members. Offer exclusivity and privacy to select members.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-email-app.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Email App</h3>
+								<p class="pricing-addons__slide-text">Lightning speed, advanced security, and proper management of sending and receiving emails in batches.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-membership-module.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Membership Module</h3>
+								<p class="pricing-addons__slide-text">Create exclusive access to special offers and sections of your business website available to members only. Create customized customer's journey.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-esign.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+								<p class="pricing-addons__slide-text">Send and sign agreements from anywhere from the comfort of your devices.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="img/pricing-addon-communications.png">
+								</div>
+								<h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+								<p class="pricing-addons__slide-text">Outsource your communications tasks from content creation, web, and graphic design, social media management, and more to our team of communications experts.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-salesforce pricing-section">
+				<div class="container">
+					<h2 class="text_center">Your <span class="color-blue">PMS Capabilities</span> Amplified With Salesforce</h2>
+					<p class="pricing-section__subtitle text_center">Get access to tons of solutions from Salesforce App Exchange. </p>
+					<p class="pricing-section__subtitle text_center">Grow your system grow according to your business needs.</p>
+					<div class="pricing-salesforce__apps">
+						<div class="row gutters-small">
+							<div class="col-12 col-lg-6">
+								<div class="pricing-salesforce__app-item wow fadeInLeft">
+									<div class="pricing-salesforce__app-img">
+										<img src="img/pricing-salesforce-img-1.jpg">
+									</div>
+									<div class="pricing-salesforce__app-text">
+										<h3 class="pricing-salesforce__app-name">Workbench:</h3>
+										<p>Workbench is a powerful, web-based suite of tools designed to interact with Salesforce.com organizations via the Force.com APIs. Easily perform SOQL and SOSL, view your organization’s data, perform data loading and testing, deploy and troubleshoot applications, and modify session settings.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="pricing-salesforce__app-item wow fadeInRight">
+									<div class="pricing-salesforce__app-img">
+										<img src="img/pricing-salesforce-img-2.jpg">
+									</div>
+									<div class="pricing-salesforce__app-text">
+										<h3 class="pricing-salesforce__app-name">Accounting Seed</h3>
+										<p>Leverage the #1 Accounting Platform to run your business more strategically and proactively. Accounting Seed is an innovative, robust financial software solution that transforms the way you do accounting. </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="pricing-salesforce__app-item wow fadeInLeft">
+									<div class="pricing-salesforce__app-img">
+										<img src="img/pricing-salesforce-img-3.jpg">
+									</div>
+									<div class="pricing-salesforce__app-text">
+										<h3 class="pricing-salesforce__app-name">Xero</h3>
+										<p>Explore features and tools built for small businesses, accountants, and bookkeepers. Pay bills, Claim expenses, bank connections. Analytics plus to take it to the next level.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="pricing-salesforce__app-item wow fadeInRight">
+									<div class="pricing-salesforce__app-img">
+										<img src="img/pricing-salesforce-img-4.jpg">
+									</div>
+									<div class="pricing-salesforce__app-text">
+										<h3 class="pricing-salesforce__app-name">And More</h3>
+										<p>Have access to an endless stream of APIs, add-on applications, and the latest cloud technology made available by Salesforce all available on our all-in-one platform.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-faq pricing-section">
+				<div class="container">
+					<h2 class="text_center">Frequently <span class="color-blue">Asked Questions</span></h2>
+					<div class="pricing-accordion">
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Can I cancel my account at any time?</>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Yes, you can cancel your subscription at any time. To cancel your subscription, you are required to give a 60 days notice.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What type of payments do you accept?</>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>We accept card payments (debit or credit) and mobile payments and electronic bank transfers.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Are there any contracts, setup fees, or hidden fees?</>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>No hidden fees. All fees and prices are listed and our pricing and payment procedure are completely transparent. </p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What is your refund policy?</>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>At Booking Ninjas we strive to create quality software that you enjoy using for easy management of your business. You have a number of choices and we appreciate you giving us your business.</p>
+								<p>If at any time during your first month using our service you are dissatisfied, please contact us. We will do our best to address your issue, provide a workaround or give a timeline for a solution that will meet your needs.  If you are not satisfied, we will gladly cancel your subscription at the end of that month and downgrade your account. </p>
+								<p>The annual subscriptions expire at the end of the year and will be canceled if not renewed. We do not offer any refunds, credit, or other compensation at this time.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>How long does Implementation take?</>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>The implementation procedure will take a maximum of 3 to 8 weeks.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-meeting pricing-section">
+				<div class="container text_center">
+					<h2>Have <span class="color-blue">More Questions?</span></h2>
+					<p>Talk with one of our specialist and find out how you can benefit from our system.</p>
+					<a href="/schedule-an-appointment" class="button-orange">Schedule A Meeting</a>
+				</div>
+			</div>
+
+			<!-- Modal window -->
+			<div class="modal core-modal" id="core-modal">
+				<div class="core-modal__header">
+					<p>Get Full Access To Our Core Features</p>
+				</div>
+				<div class="core-modal__content">
+					<p>We believe our core features can give you the edge you need to win, no matter your size.</p>
+					<br>
+					<p>Thus, you’ll get full access to our core features even if you have only 1 unit/room</p>
+					<br>
+					<a data-fancybox-close="true">Close</a>
+				</div>
+			</div>
+			<!-- /Modal window -->
+		</main>
+		<!--end-main-->
+
+		<!--footer-->
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<a class="logo" href="/"><img alt="Booking Ninjas Logo" src="https://d1b89zc79exfxt.cloudfront.netimg/logo-footer.png" /></a>
+							<address>
+								<p>
+									1815 Purdy Avenue <br />
+									Miami Beach, FL 33139
+								</p>
+								<p><a href="mailto:sales@bookingninjas.com"><small>sales@bookingninjas.com</small></a></p>
+								<p><a href="tel:+19176002345"><small>+1 (917) 600 2345</small></a></p>
+							</address>
+						</div>
+						<div class="col-lg-7">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="footer__title">Company:</div>
+									<nav class="footer__list">
+										<ul>
+											<li><a href="/about-us">About Us</a></li>
+											<li><a href="/surveys">Surveys</a></li>
+											<li><a href="/webinars">Webinars</a></li>
+											<li><a href="/blog">Blog</a></li>
+											<li><a href="/faqs">FAQs</a></li>
+										</ul>
+									</nav>
+								</div>
+
+								<div class="col-lg-9">
+									<nav class="footer__social">
+										<a href="https://www.facebook.com/bookingninjas" target="_blank"><i class="fab fa-facebook"></i></a>
+										<a href="https://www.instagram.com/bookingninjas" target="_blank"><i class="fab fa-instagram"></i></a>
+										<a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank"><i class="fab fa-youtube"></i></a>
+										<a href="https://www.linkedin.com/company/5346092/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+										<a href="https://twitter.com/bookingninjas" target="_blank"><i class="fab fa-twitter"></i></a>
+										<a href="https://www.pinterest.com/bookingninjas" target="_blank"><i class="fab fa-pinterest"></i></a>
+										<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank"><i class="fab fa-salesforce"></i></a>
+									</nav>
+									<form id="j_id0:j_id1:footer-form" name="j_id0:j_id1:footer-form" method="post" action="/BN_Index" class="footer__form" enctype="application/x-www-form-urlencoded">
+										<input type="hidden" name="j_id0:j_id1:footer-form" value="j_id0:j_id1:footer-form" />
+										<input type="text" name="j_id0:j_id1:footer-form:j_id199" value="" required="required" placeholder="Enter Your Email" /><input class="button footer-btn-submit" id="j_id0:j_id1:footer-form:j_id200" name="j_id0:j_id1:footer-form:j_id200" onclick="return A4J.AJAX.Submit('j_id0:j_id1:footer\x2Dform',event,{'similarityGroupingId':'j_id0:j_id1:footer\x2Dform:j_id200','html5Validate':true,'parameters':{'j_id0:j_id1:footer\x2Dform:j_id200':'j_id0:j_id1:footer\x2Dform:j_id200'} } );" value="Subscribe" type="submit" />
+										<div id="j_id0:j_id1:footer-form:j_id203"></div>
+									</form>
+									<div class="modal modal__success" id="modal-thanks">
+										<div class="modal__success-icon"><i class="far fa-check-circle"></i></div>
+										<p>Thanks</p>
+										<p>We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+									</div>
+									<p class="footer__form-text">We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6">All rights reserved &copy; 2020 - Booking Ninjas</div>
+						<div class="col-md-6">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/footer-->
+	</div>
+
+	<!--SCRIPT -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<!--build:js js/main.min.js -->
+	<script src="js/slick.js"></script>
+	<script src="js/wow.js"></script>
+	<!-- endbuild -->
+	<script src="js/common.js"></script>
+	<!-- END OF SCRIPT -->
+
+</body>
+
+</html>

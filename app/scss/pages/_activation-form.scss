@@ -1,0 +1,16 @@
+.activation-form-page-top{
+  padding: 20px 0;
+  h1{
+    @include mq($min-width: 993px) {
+      font-size: 48px;  
+    }
+  }
+}
+.activation-form{
+  margin: 100px 0 60px 0;
+  h2.career-lead-form__title{
+    @include mq($min-width: 993px) {
+      font-size: 24px;  
+    }
+  }
+}
