@@ -1,0 +1,40 @@
+.landing-invoice {
+    padding-top: 0;
+    .header {
+        min-height: 130px;
+        position: relative;
+        left: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+        .logo img {
+            max-width: 200px;
+        }
+        h5 {
+            font-weight: 600;
+        }
+        address {
+            padding-top: 10px;
+            font-style: normal;
+            font-size: 14px;
+            color: #323232;
+            p:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            a {
+                &:not(.mail) {
+                    text-decoration: none;
+                }
+                &.site,
+                &.mail {
+                    color: #1168ad;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.payment-invoice {
+    min-height: 100vh;
+    background-color: #f7f8fc;
+}

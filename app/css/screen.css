@@ -8654,3 +8654,21 @@ ul.diamond-markers li:before { position: absolute; content: ''; display: block; 
 @media only screen and (max-width: 767px) { .feature-spotlight__pager-item { width: 100%; margin-bottom: 20px; font-size: 16px; padding: 20px; } }
 
 .feature-spotlight-bg { background: url(../img/feature-spotlight-bg.jpg) no-repeat bottom center; }
+
+.landing-invoice { padding-top: 0; }
+
+.landing-invoice .header { min-height: 130px; position: relative; left: auto; top: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.landing-invoice .header .logo img { max-width: 200px; }
+
+.landing-invoice .header h5 { font-weight: 600; }
+
+.landing-invoice .header address { padding-top: 10px; font-style: normal; font-size: 14px; color: #323232; }
+
+.landing-invoice .header address p:not(:last-child) { margin-bottom: 5px; }
+
+.landing-invoice .header address a:not(.mail) { text-decoration: none; }
+
+.landing-invoice .header address a.site, .landing-invoice .header address a.mail { color: #1168ad; font-weight: 500; }
+
+.payment-invoice { min-height: 100vh; background-color: #f7f8fc; }
